@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            adaptable="true"
+            id="sourceminer"
+            objectClass="org.eclipse.core.resources.IProject">
+         <action
+               class="sourceminer.popups.VisualizerAction"
+               enablesFor="1"
+               icon="icons/packagedependency.gif"
+               id="sourceminer.core.popups.VisualizerAction"
+               label="Visualize with SourceMiner"
+               menubarPath="additions"
+               tooltip="Visualize the selected project with SourceMiner.">
+         </action>
+      </objectContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            id="sourceminer"
+            name="SourceMiner">
+      </category>
+      <view
+            allowMultiple="false"
+            category="sourceminer"
+            class="sourceminer.filtersview.ConcernsFilter"
+            icon="icons/filterView.png"
+            id="sourceminer.filtersview.concernsfilter"
+            name="Concerns Filter">
+      </view>
+      <view
+            allowMultiple="false"
+            category="sourceminer"
+            class="sourceminer.filtersview.FiltersID"
+            icon="icons/filterView.png"
+            id="sourceminer.filtersview.idfilter"
+            name="ID Filter">
+      </view>
+      <view
+            allowMultiple="false"
+            category="sourceminer"
+            class="sourceminer.filtersview.FiltersRanger"
+            icon="icons/filterView.png"
+            id="sourceminer.filtersview.propertiesfilter"
+            name="Properties Filter">
+      </view>
+      <view
+            allowMultiple="false"
+            category="sourceminer"
+            class="sourceminer.filtersview.DependenciesFilter"
+            icon="icons/filterView.png"
+            id="sourceminer.filtersview.dependenciesfilter"
+            name="Dependencies Filter">
+      </view>
+          
+     
+      
+   
+      <!-- <view
+            allowMultiple="false"
+            category="org.gesa.sourceminer"
+            class="org.gesa.sourceminer.view.paradigms.GridDistanceView"
+            fastViewWidthRatio="0.95"
+            icon="resources/icons/grid.gif"
+            id="org.gesa.sourceminer.view.paradigms.GridDistanceView"
+            name="GridDistance">
+      </view>
+      -->
+   </extension>
+   <extension
+         point="aimv.modules">
+      <module
+            class="sourceminer.modules.NodesModule"
+            creation="true"
+            id="sourceminer.modules.nodesmodule"
+            name="Nodes Module">
+      </module>
+      <module
+            class="sourceminer.modules.ConcernsModule"
+            creation="true"
+            id="sourceminer.modules.concernsmodule"
+            name="Concerns Module">
+      </module>
+      <module
+            class="sourceminer.modules.ComplexityModule"
+            creation="true"
+            id="sourceminer.modules.complexitymodule"
+            name="Complexity Module">
+      </module>
+      <module
+            class="sourceminer.modules.SizeModule"
+            creation="true"
+            id="sourceminer.modules.sizemodule"
+            name="Size Module">
+      </module>
+      <module
+            class="sourceminer.modules.NumElementsModule"
+            creation="true"
+            id="sourceminer.modules.numelementsmodule"
+            name="Number Elements Module">
+      </module>
+      <module
+            class="sourceminer.modules.ColorationModule"
+            creation="true"
+            id="sourceminer.modules.colorationmodule"
+            name="Coloration Module">
+      </module>
+      <module
+            class="sourceminer.modules.RelationsModule"
+            creation="true"
+            id="sourceminer.modules.relationsmodule"
+            name="Relations Module">
+      </module>
+      <module
+            class="sourceminer.modules.HierarchyModule"
+            creation="true"
+            id="sourceminer.modules.hierarchymodule"
+            name="Hierarchy Module">
+      </module>
+      <module
+            class="sourceminer.modules.FiltersRangerModule"
+            creation="true"
+            id="sourceminer.modules.filtersrangemodule"
+            name="Filters Range Module">
+      </module>
+   </extension>
+   <extension
+         point="aimv.filters">
+      <filter
+            class="sourceminer.filters.DependencyFilter"
+            id="sourceminer.filters.dependencyfilter"
+            name="Dependency Filter">
+      </filter>
+      <filter
+            class="sourceminer.filters.FilterID"
+            id="sourceminer.filters.filterid"
+            name="Filter ID (Project)">
+      </filter>
+      <filter
+            class="sourceminer.filters.ConcernFilter"
+            id="sourceminer.filters.concernfilter"
+            name="Concern Filter">
+      </filter>
+      <filter
+            class="sourceminer.filters.ComplexityFilter"
+            id="sourceminer.filters.complexityfilter"
+            name="Complexity (Method)">
+      </filter>
+      <filter
+            class="sourceminer.filters.NMFilter"
+            id="sourceminer.filters.nmfilter"
+            name="Number of Methods">
+      </filter>
+      <filter
+            class="sourceminer.filters.LOCClassFilter"
+            id="sourceminer.filters.locclassfilter"
+            name="Lines of code (Class)">
+      </filter>
+      <filter
+            class="sourceminer.filters.LOCMethodFilter"
+            id="sourceminer.filters.locmethodfilter"
+            name="Lines of code (Method)">
+      </filter>
+      <filter
+            class="sourceminer.filters.ACFilter"
+            id="sourceminer.filters.acfilter"
+            name="Afferent Coupling">
+      </filter>
+      <filter
+            class="sourceminer.filters.ECFilter"
+            id="sourceminer.filters.ecfilter"
+            name="Efferent Coupling">
+      </filter>
+   </extension>
+   <extension
+         point="org.eclipse.ui.viewActions">
+      <viewContribution
+            id="sourceminer.propertiesviewcontribution"
+            targetID="aimv.views.propertiesview">
+         <action
+               class="sourceminer.tools.actions.SourceCodeAction"
+               icon="icons/source_code.png"
+               id="sourceminer.actions.sourcecodeaction"
+               label="Open Source Code"
+               state="true"
+               style="push"
+               toolbarPath="Normal">
+         </action>
+         <action
+               class="sourceminer.tools.actions.HelpColorsAction"
+               icon="icons/help.png"
+               id="aimv.properties.actions.helpColors"
+               label="Help Colors"
+               style="pulldown"
+               toolbarPath="Normal/polymetric.group.help"
+               tooltip="Help Colors">
+         </action>
+      </viewContribution>
+   </extension>
+
+</plugin>

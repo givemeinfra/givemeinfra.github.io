@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            allowMultiple="false"
+            class="views.treemap.TreeMap"
+            fastViewWidthRatio="0.95"
+            icon="icons/treemap.gif"
+            id="aimv.paradigms.treemap"
+            name="TreeMap">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.viewActions">
+      <viewContribution
+            id="aimv.treemap.helpcontribution"
+            targetID="aimv.paradigms.treemap">
+         <action
+               class="views.treemap.actions.AreaAction"
+               icon="icons/areaMode.png"
+               id="aimv.treemap.actions.area"
+               label="Area"
+               style="pulldown"
+               toolbarPath="Normal/treemap.group.relation"
+               tooltip="Area">
+         </action>
+      </viewContribution>
+   </extension>
+
+</plugin>

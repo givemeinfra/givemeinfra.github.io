@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            allowMultiple="false"
+            class="views.grid.GridView"
+            fastViewWidthRatio="0.95"
+            icon="icons/grid.png"
+            id="aimv.paradigms.grid"
+            name="Grid">
+      </view>
+   </extension>
+
+
+</plugin>

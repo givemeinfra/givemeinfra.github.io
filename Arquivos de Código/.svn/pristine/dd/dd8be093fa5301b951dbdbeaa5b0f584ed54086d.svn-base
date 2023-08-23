@@ -1,0 +1,1097 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://facade.service.br.com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://facade.service.br.com" xmlns:intf="http://facade.service.br.com" xmlns:tns1="http://valueObject.service.br.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://facade.service.br.com" xmlns="http://www.w3.org/2001/XMLSchema">
+   <import namespace="http://valueObject.service.br.com"/>
+   <element name="updateProject">
+    <complexType>
+     <sequence>
+      <element name="project" type="tns1:ProjectVO"/>
+      <element name="update" type="tns1:ProjectVO"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="updateProjectResponse">
+    <complexType>
+     <sequence>
+      <element name="updateProjectReturn" type="xsd:boolean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="removeProject">
+    <complexType>
+     <sequence>
+      <element name="project" type="tns1:ProjectVO"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="removeProjectResponse">
+    <complexType>
+     <sequence>
+      <element name="removeProjectReturn" type="xsd:boolean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="findProjects">
+    <complexType/>
+   </element>
+   <element name="findProjectsResponse">
+    <complexType>
+     <sequence>
+      <element maxOccurs="unbounded" name="findProjectsReturn" type="tns1:ProjectVO"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="updateActivityOnProject">
+    <complexType>
+     <sequence>
+      <element name="project" type="tns1:ProjectVO"/>
+      <element name="activity" type="tns1:ActivityVO"/>
+      <element name="update" type="tns1:ActivityVO"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="updateActivityOnProjectResponse">
+    <complexType>
+     <sequence>
+      <element name="updateActivityOnProjectReturn" type="xsd:boolean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="updateDeveloperOnProject">
+    <complexType>
+     <sequence>
+      <element name="project" type="tns1:ProjectVO"/>
+      <element name="developer" type="tns1:DeveloperVO"/>
+      <element name="update" type="tns1:DeveloperVO"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="updateDeveloperOnProjectResponse">
+    <complexType>
+     <sequence>
+      <element name="updateDeveloperOnProjectReturn" type="xsd:boolean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="sendMessageOnProject">
+    <complexType>
+     <sequence>
+      <element name="project" type="xsd:string"/>
+      <element name="message" type="tns1:MessageVO"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="sendMessageOnProjectResponse">
+    <complexType>
+     <sequence>
+      <element name="sendMessageOnProjectReturn" type="xsd:boolean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="findDevelopersOnProject">
+    <complexType>
+     <sequence>
+      <element name="project" type="tns1:ProjectVO"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="findDevelopersOnProjectResponse">
+    <complexType>
+     <sequence>
+      <element maxOccurs="unbounded" name="findDevelopersOnProjectReturn" type="tns1:DeveloperVO"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="findUserMessagesOnProject">
+    <complexType>
+     <sequence>
+      <element name="messageVO" type="tns1:MessageVO"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="findUserMessagesOnProjectResponse">
+    <complexType>
+     <sequence>
+      <element maxOccurs="unbounded" name="findUserMessagesOnProjectReturn" type="tns1:MessageVO"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="findActivitiesOnProject">
+    <complexType>
+     <sequence>
+      <element name="project" type="tns1:ProjectVO"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="findActivitiesOnProjectResponse">
+    <complexType>
+     <sequence>
+      <element maxOccurs="unbounded" name="findActivitiesOnProjectReturn" type="tns1:ActivityVO"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="sendSystemMessageOnProject">
+    <complexType>
+     <sequence>
+      <element name="project" type="xsd:string"/>
+      <element name="message" type="tns1:MessageVO"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="sendSystemMessageOnProjectResponse">
+    <complexType>
+     <sequence>
+      <element name="sendSystemMessageOnProjectReturn" type="xsd:boolean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="findSystemMessagesOnProject">
+    <complexType>
+     <sequence>
+      <element name="messageVO" type="tns1:MessageVO"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="findSystemMessagesOnProjectResponse">
+    <complexType>
+     <sequence>
+      <element maxOccurs="unbounded" name="findSystemMessagesOnProjectReturn" type="tns1:MessageVO"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="addDeveloperOnProject">
+    <complexType>
+     <sequence>
+      <element name="project" type="tns1:ProjectVO"/>
+      <element name="developer" type="tns1:DeveloperVO"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="addDeveloperOnProjectResponse">
+    <complexType>
+     <sequence>
+      <element name="addDeveloperOnProjectReturn" type="xsd:boolean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="removeActivityOnProject">
+    <complexType>
+     <sequence>
+      <element name="project" type="tns1:ProjectVO"/>
+      <element name="activity" type="tns1:ActivityVO"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="removeActivityOnProjectResponse">
+    <complexType>
+     <sequence>
+      <element name="removeActivityOnProjectReturn" type="xsd:boolean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="findDeveloperOnProject">
+    <complexType>
+     <sequence>
+      <element name="developerVO" type="tns1:DeveloperVO"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="findDeveloperOnProjectResponse">
+    <complexType>
+     <sequence>
+      <element name="findDeveloperOnProjectReturn" type="tns1:DeveloperVO"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="removeDeveloperOnProject">
+    <complexType>
+     <sequence>
+      <element name="project" type="tns1:ProjectVO"/>
+      <element name="developer" type="tns1:DeveloperVO"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="removeDeveloperOnProjectResponse">
+    <complexType>
+     <sequence>
+      <element name="removeDeveloperOnProjectReturn" type="xsd:boolean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="addActivityOnProject">
+    <complexType>
+     <sequence>
+      <element name="project" type="tns1:ProjectVO"/>
+      <element name="activity" type="tns1:ActivityVO"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="addActivityOnProjectResponse">
+    <complexType>
+     <sequence>
+      <element name="addActivityOnProjectReturn" type="xsd:boolean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="addProject">
+    <complexType>
+     <sequence>
+      <element name="project" type="tns1:ProjectVO"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="addProjectResponse">
+    <complexType>
+     <sequence>
+      <element name="addProjectReturn" type="xsd:boolean"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+  <schema elementFormDefault="qualified" targetNamespace="http://valueObject.service.br.com" xmlns="http://www.w3.org/2001/XMLSchema">
+   <complexType name="ProjectVO">
+    <sequence>
+     <element name="active" type="xsd:boolean"/>
+     <element name="name" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="ActivityVO">
+    <sequence>
+     <element name="active" type="xsd:boolean"/>
+     <element name="name" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="DeveloperVO">
+    <sequence>
+     <element name="active" type="xsd:boolean"/>
+     <element name="coordination" nillable="true" type="xsd:boolean"/>
+     <element name="name" nillable="true" type="xsd:string"/>
+     <element name="passWord" nillable="true" type="xsd:string"/>
+     <element name="projectVO" nillable="true" type="tns1:ProjectVO"/>
+     <element name="userName" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="MessageVO">
+    <sequence>
+     <element name="activity" nillable="true" type="xsd:string"/>
+     <element name="date" nillable="true" type="xsd:string"/>
+     <element name="developerVO" nillable="true" type="tns1:DeveloperVO"/>
+     <element name="entity" nillable="true" type="xsd:string"/>
+     <element name="finalContent" nillable="true" type="xsd:string"/>
+     <element name="finalTime" nillable="true" type="xsd:string"/>
+     <element name="initialContent" nillable="true" type="xsd:string"/>
+     <element name="initialTime" nillable="true" type="xsd:string"/>
+     <element name="paradigm" nillable="true" type="xsd:string"/>
+     <element name="projectVO" nillable="true" type="tns1:ProjectVO"/>
+     <element name="text" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="findSystemMessagesOnProjectRequest">
+
+      <wsdl:part element="impl:findSystemMessagesOnProject" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findActivitiesOnProjectRequest">
+
+      <wsdl:part element="impl:findActivitiesOnProject" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSystemMessagesOnProjectResponse">
+
+      <wsdl:part element="impl:findSystemMessagesOnProjectResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="addProjectRequest">
+
+      <wsdl:part element="impl:addProject" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateActivityOnProjectRequest">
+
+      <wsdl:part element="impl:updateActivityOnProject" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="removeActivityOnProjectResponse">
+
+      <wsdl:part element="impl:removeActivityOnProjectResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="removeDeveloperOnProjectResponse">
+
+      <wsdl:part element="impl:removeDeveloperOnProjectResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="addDeveloperOnProjectResponse">
+
+      <wsdl:part element="impl:addDeveloperOnProjectResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="removeActivityOnProjectRequest">
+
+      <wsdl:part element="impl:removeActivityOnProject" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findUserMessagesOnProjectResponse">
+
+      <wsdl:part element="impl:findUserMessagesOnProjectResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="addActivityOnProjectResponse">
+
+      <wsdl:part element="impl:addActivityOnProjectResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="sendSystemMessageOnProjectResponse">
+
+      <wsdl:part element="impl:sendSystemMessageOnProjectResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="addProjectResponse">
+
+      <wsdl:part element="impl:addProjectResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateDeveloperOnProjectResponse">
+
+      <wsdl:part element="impl:updateDeveloperOnProjectResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateProjectResponse">
+
+      <wsdl:part element="impl:updateProjectResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findDeveloperOnProjectRequest">
+
+      <wsdl:part element="impl:findDeveloperOnProject" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findDevelopersOnProjectRequest">
+
+      <wsdl:part element="impl:findDevelopersOnProject" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="addDeveloperOnProjectRequest">
+
+      <wsdl:part element="impl:addDeveloperOnProject" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findProjectsResponse">
+
+      <wsdl:part element="impl:findProjectsResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="sendMessageOnProjectResponse">
+
+      <wsdl:part element="impl:sendMessageOnProjectResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateDeveloperOnProjectRequest">
+
+      <wsdl:part element="impl:updateDeveloperOnProject" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="sendMessageOnProjectRequest">
+
+      <wsdl:part element="impl:sendMessageOnProject" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findActivitiesOnProjectResponse">
+
+      <wsdl:part element="impl:findActivitiesOnProjectResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateActivityOnProjectResponse">
+
+      <wsdl:part element="impl:updateActivityOnProjectResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateProjectRequest">
+
+      <wsdl:part element="impl:updateProject" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="sendSystemMessageOnProjectRequest">
+
+      <wsdl:part element="impl:sendSystemMessageOnProject" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="removeProjectResponse">
+
+      <wsdl:part element="impl:removeProjectResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="removeProjectRequest">
+
+      <wsdl:part element="impl:removeProject" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findProjectsRequest">
+
+      <wsdl:part element="impl:findProjects" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="addActivityOnProjectRequest">
+
+      <wsdl:part element="impl:addActivityOnProject" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findDevelopersOnProjectResponse">
+
+      <wsdl:part element="impl:findDevelopersOnProjectResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findUserMessagesOnProjectRequest">
+
+      <wsdl:part element="impl:findUserMessagesOnProject" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findDeveloperOnProjectResponse">
+
+      <wsdl:part element="impl:findDeveloperOnProjectResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="removeDeveloperOnProjectRequest">
+
+      <wsdl:part element="impl:removeDeveloperOnProject" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="ServiceFacade">
+
+      <wsdl:operation name="updateProject">
+
+         <wsdl:input message="impl:updateProjectRequest" name="updateProjectRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:updateProjectResponse" name="updateProjectResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="removeProject">
+
+         <wsdl:input message="impl:removeProjectRequest" name="removeProjectRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:removeProjectResponse" name="removeProjectResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findProjects">
+
+         <wsdl:input message="impl:findProjectsRequest" name="findProjectsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:findProjectsResponse" name="findProjectsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateActivityOnProject">
+
+         <wsdl:input message="impl:updateActivityOnProjectRequest" name="updateActivityOnProjectRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:updateActivityOnProjectResponse" name="updateActivityOnProjectResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateDeveloperOnProject">
+
+         <wsdl:input message="impl:updateDeveloperOnProjectRequest" name="updateDeveloperOnProjectRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:updateDeveloperOnProjectResponse" name="updateDeveloperOnProjectResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="sendMessageOnProject">
+
+         <wsdl:input message="impl:sendMessageOnProjectRequest" name="sendMessageOnProjectRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:sendMessageOnProjectResponse" name="sendMessageOnProjectResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findDevelopersOnProject">
+
+         <wsdl:input message="impl:findDevelopersOnProjectRequest" name="findDevelopersOnProjectRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:findDevelopersOnProjectResponse" name="findDevelopersOnProjectResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findUserMessagesOnProject">
+
+         <wsdl:input message="impl:findUserMessagesOnProjectRequest" name="findUserMessagesOnProjectRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:findUserMessagesOnProjectResponse" name="findUserMessagesOnProjectResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findActivitiesOnProject">
+
+         <wsdl:input message="impl:findActivitiesOnProjectRequest" name="findActivitiesOnProjectRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:findActivitiesOnProjectResponse" name="findActivitiesOnProjectResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="sendSystemMessageOnProject">
+
+         <wsdl:input message="impl:sendSystemMessageOnProjectRequest" name="sendSystemMessageOnProjectRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:sendSystemMessageOnProjectResponse" name="sendSystemMessageOnProjectResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSystemMessagesOnProject">
+
+         <wsdl:input message="impl:findSystemMessagesOnProjectRequest" name="findSystemMessagesOnProjectRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:findSystemMessagesOnProjectResponse" name="findSystemMessagesOnProjectResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="addDeveloperOnProject">
+
+         <wsdl:input message="impl:addDeveloperOnProjectRequest" name="addDeveloperOnProjectRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:addDeveloperOnProjectResponse" name="addDeveloperOnProjectResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="removeActivityOnProject">
+
+         <wsdl:input message="impl:removeActivityOnProjectRequest" name="removeActivityOnProjectRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:removeActivityOnProjectResponse" name="removeActivityOnProjectResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findDeveloperOnProject">
+
+         <wsdl:input message="impl:findDeveloperOnProjectRequest" name="findDeveloperOnProjectRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:findDeveloperOnProjectResponse" name="findDeveloperOnProjectResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="removeDeveloperOnProject">
+
+         <wsdl:input message="impl:removeDeveloperOnProjectRequest" name="removeDeveloperOnProjectRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:removeDeveloperOnProjectResponse" name="removeDeveloperOnProjectResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="addActivityOnProject">
+
+         <wsdl:input message="impl:addActivityOnProjectRequest" name="addActivityOnProjectRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:addActivityOnProjectResponse" name="addActivityOnProjectResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="addProject">
+
+         <wsdl:input message="impl:addProjectRequest" name="addProjectRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:addProjectResponse" name="addProjectResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="ServiceFacadeSoapBinding" type="impl:ServiceFacade">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="updateProject">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="updateProjectRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="updateProjectResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="removeProject">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="removeProjectRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="removeProjectResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findProjects">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="findProjectsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="findProjectsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateActivityOnProject">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="updateActivityOnProjectRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="updateActivityOnProjectResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateDeveloperOnProject">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="updateDeveloperOnProjectRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="updateDeveloperOnProjectResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="sendMessageOnProject">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="sendMessageOnProjectRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="sendMessageOnProjectResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findDevelopersOnProject">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="findDevelopersOnProjectRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="findDevelopersOnProjectResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findUserMessagesOnProject">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="findUserMessagesOnProjectRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="findUserMessagesOnProjectResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findActivitiesOnProject">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="findActivitiesOnProjectRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="findActivitiesOnProjectResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="sendSystemMessageOnProject">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="sendSystemMessageOnProjectRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="sendSystemMessageOnProjectResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSystemMessagesOnProject">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="findSystemMessagesOnProjectRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="findSystemMessagesOnProjectResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="addDeveloperOnProject">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="addDeveloperOnProjectRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="addDeveloperOnProjectResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="removeActivityOnProject">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="removeActivityOnProjectRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="removeActivityOnProjectResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findDeveloperOnProject">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="findDeveloperOnProjectRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="findDeveloperOnProjectResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="removeDeveloperOnProject">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="removeDeveloperOnProjectRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="removeDeveloperOnProjectResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="addActivityOnProject">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="addActivityOnProjectRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="addActivityOnProjectResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="addProject">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="addProjectRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="addProjectResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="ServiceFacadeService">
+
+      <wsdl:port binding="impl:ServiceFacadeSoapBinding" name="ServiceFacade">
+
+         <wsdlsoap:address location="http://localhost:8080/CollaborativeAIMV-Service/services/ServiceFacade"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

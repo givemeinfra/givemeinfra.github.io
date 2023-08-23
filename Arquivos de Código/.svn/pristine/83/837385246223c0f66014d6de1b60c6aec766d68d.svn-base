@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+encoding//src/collaborative/service/facade/ServiceFacade.java=UTF-8
+encoding//src/collaborative/service/facade/ServiceFacadeService.java=UTF-8
+encoding//src/collaborative/service/facade/ServiceFacadeServiceLocator.java=UTF-8
+encoding//src/collaborative/service/facade/ServiceFacadeSoapBindingStub.java=UTF-8
+encoding//src/collaborative/valueObject/ActivityVO.java=UTF-8
+encoding//src/collaborative/valueObject/DeveloperVO.java=UTF-8
+encoding//src/collaborative/valueObject/MessageVO.java=UTF-8
+encoding//src/collaborative/valueObject/ProjectVO.java=UTF-8

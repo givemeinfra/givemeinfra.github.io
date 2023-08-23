@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         id="com.itsolut.mantis.repository"
+         name="%extension.name"
+         point="org.eclipse.mylyn.tasks.ui.repositories">
+      <connectorCore
+            class="com.itsolut.mantis.core.MantisRepositoryConnector"
+            id="com.itsolut.mantis.tasklist.repositories"
+            name="%connectorCore.name"/>
+      <connectorUi
+            brandingIcon="icons/eview16/mantis-icon.gif"
+            class="com.itsolut.mantis.ui.internal.MantisRepositoryUi"
+            id="Manits Repository UI"
+            overlayIcon="icons/eview16/overlay-mantis.gif"/>
+	  <taskListMigrator 
+            class="com.itsolut.mantis.ui.tasklist.MantisTaskListMigrator"/>
+   <repositoryMigrator
+         class="com.itsolut.mantis.ui.internal.MantisRepositoryMigrator">
+   </repositoryMigrator>
+   </extension>
+   <extension
+         point="org.eclipse.mylyn.tasks.core.templates">
+      <repository
+            addAutomatically="false"
+            anonymous="true"
+            label="MantisBT 1.1 or later"
+            repositoryKind="mantis"
+            urlRepository="http://www.example.com/mantisbt/"/>
+      <repository
+            addAutomatically="false"
+            anonymous="true"
+            label="MantisBT Bugs"
+            repositoryKind="mantis"
+            urlRepository="http://www.mantisbt.org/bugs/"/>
+      <repository
+            addAutomatically="true"
+            anonymous="true"
+            label="Mylyn-Mantis Support"
+            repositoryKind="mantis"
+            urlRepository="https://sourceforge.net/apps/mantisbt/mylyn-mantis/"/>
+   </extension> 
+     <extension
+         point="org.eclipse.mylyn.tasks.ui.editors">
+      <pageFactory
+            class="com.itsolut.mantis.ui.editor.MantisTaskEditorPageFactory"
+            id="com.itsolut.mantis.ui.pageFactory">
+      </pageFactory>            
+   </extension>
+   
+   <extension point = "org.eclipse.ui.popupMenus">
+      <objectContribution
+            adaptable="false"
+            id="com.itsolut.mantis.ui.contribution.attachment"
+            objectClass="org.eclipse.mylyn.tasks.core.ITaskAttachment">
+         <action
+               class="com.itsolut.mantis.ui.action.MantisDeleteAttachmentAction"
+               enablesFor="*"
+               id="com.itsolut.mantis.ui.contribution.attachment.delete"
+               label="%action.label"
+               tooltip="%action.tooltip">
+            <enablement> 
+              <objectState name="connectorKind" value="mantis"/>
+            </enablement> 
+         </action>
+         <visibility>
+               <objectState name="connectorKind" value="mantis"/>
+         </visibility>
+      </objectContribution>
+   </extension>
+</plugin>

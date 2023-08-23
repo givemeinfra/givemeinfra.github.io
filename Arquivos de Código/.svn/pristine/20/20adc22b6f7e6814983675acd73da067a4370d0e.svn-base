@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+	<extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            id="collaborative.aimv"
+            label="Collaborative AIMV"
+            visible="true">
+         <menu
+               id="CollaborativeAIMV.menu"
+               label="Collaborative">
+            <groupMarker
+                  name="CollaborativeAIMV.group">
+            </groupMarker>
+         </menu>
+         <action
+               class="com.br.collaborativeAIMV.view.actionSetCalls.LoginScreen"
+               id="collaborativeaimv.menuscreens.loginscreen"
+               label="&amp;Perform Login"
+               icon="resources/icons/connect.png"
+               menubarPath="CollaborativeAIMV.menu/CollaborativeAIMV.group">
+               
+         </action>
+         <action
+               class="com.br.collaborativeAIMV.view.actionSetCalls.ActivityScreen"
+               id="collaborativeaimv.menuscreens.activityscreen"
+               label="&amp;Manage Activities"
+               icon="resources/icons/activity.png"
+               menubarPath="CollaborativeAIMV.menu/CollaborativeAIMV.group">
+               
+         </action>
+         <action
+               class="com.br.collaborativeAIMV.view.actionSetCalls.ProjectScreen"
+               id="collaborativeaimv.menuscreens.projectscreen"
+               label="&amp;Manage Projects"
+               icon="resources/icons/monitor_add.png"
+               menubarPath="CollaborativeAIMV.menu/CollaborativeAIMV.group">
+               
+         </action>
+         <action
+               class="com.br.collaborativeAIMV.view.actionSetCalls.DeveloperScreen"
+               id="collaborativeaimv.menuscreens.developerscreen"
+               label="&amp;Manage Developers"
+               icon="resources/icons/user_add.png"
+               menubarPath="CollaborativeAIMV.menu/CollaborativeAIMV.group">
+               
+         </action>
+
+      </actionSet>
+   </extension>
+   
+   <extension point="org.eclipse.ui.views">
+   		<category  id="collaborative.aimv"
+           name="Collaborative AIMV">
+        </category>
+   		<view id="aimv.views.CollaborationView"
+   				category="collaborative.aimv"
+   				name="Collaboration View"
+   				icon="resources\icons\collaboration.png"
+   				class="com.br.collaborativeAIMV.views.CollaborationView"/>
+   		
+   		<view 
+   				id="aimv.views.MessageView"
+   				category="collaborative.aimv"
+   				name="Message View"
+   				icon="resources\icons\Chat-icon.png"
+   				class="com.br.collaborativeAIMV.views.MessageView"/>
+   		<view
+   				id="aimv.views.SourceCompareView"
+   				category="collaborative.aimv"
+   				name="SourceCompare View"
+   				icon="resources\icons\de_para.png"
+   				class="com.br.collaborativeAIMV.views.SourceCompareView"/>
+   	</extension>
+   	<!--
+   	<extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            adaptable="true"
+            id="org.gesa.sourceminer"
+            objectClass="">
+         <action
+               class=""
+               enablesFor="1"
+               icon="resources/icons/visualizer.gif"
+               id="org.gesa.sourceminer.core.popups.VisualizerAction"
+               label="Visualize with Collaborative SourceMiner"
+               menubarPath="additions"
+               tooltip="Visualize the selected project with Collaborative SourceMiner.">
+         </action>
+      </objectContribution>
+    </extension>
+    -->
+</plugin>

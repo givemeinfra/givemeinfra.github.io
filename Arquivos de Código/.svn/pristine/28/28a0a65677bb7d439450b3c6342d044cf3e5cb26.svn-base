@@ -1,0 +1,119 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from ServiceFacadeService WSDL service -->
+
+  <service name="ServiceFacade" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://facade.service.br.com"/>
+      <parameter name="wsdlServiceElement" value="ServiceFacadeService"/>
+      <parameter name="schemaQualified" value="http://facade.service.br.com,http://valueObject.service.br.com"/>
+      <parameter name="wsdlServicePort" value="ServiceFacade"/>
+      <parameter name="className" value="com.br.service.facade.ServiceFacadeSoapBindingImpl"/>
+      <parameter name="wsdlPortType" value="ServiceFacade"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation name="updateProject" qname="operNS:updateProject" xmlns:operNS="http://facade.service.br.com" returnQName="retNS:updateProjectReturn" xmlns:retNS="http://facade.service.br.com" returnType="rtns:boolean" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:project" xmlns:pns="http://facade.service.br.com" type="tns:ProjectVO" xmlns:tns="http://valueObject.service.br.com"/>
+        <parameter qname="pns:update" xmlns:pns="http://facade.service.br.com" type="tns:ProjectVO" xmlns:tns="http://valueObject.service.br.com"/>
+      </operation>
+      <operation name="removeProject" qname="operNS:removeProject" xmlns:operNS="http://facade.service.br.com" returnQName="retNS:removeProjectReturn" xmlns:retNS="http://facade.service.br.com" returnType="rtns:boolean" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:project" xmlns:pns="http://facade.service.br.com" type="tns:ProjectVO" xmlns:tns="http://valueObject.service.br.com"/>
+      </operation>
+      <operation name="findProjects" qname="operNS:findProjects" xmlns:operNS="http://facade.service.br.com" returnQName="retNS:findProjectsReturn" xmlns:retNS="http://facade.service.br.com" returnType="rtns:ProjectVO" xmlns:rtns="http://valueObject.service.br.com" soapAction="" >
+      </operation>
+      <operation name="updateActivityOnProject" qname="operNS:updateActivityOnProject" xmlns:operNS="http://facade.service.br.com" returnQName="retNS:updateActivityOnProjectReturn" xmlns:retNS="http://facade.service.br.com" returnType="rtns:boolean" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:project" xmlns:pns="http://facade.service.br.com" type="tns:ProjectVO" xmlns:tns="http://valueObject.service.br.com"/>
+        <parameter qname="pns:activity" xmlns:pns="http://facade.service.br.com" type="tns:ActivityVO" xmlns:tns="http://valueObject.service.br.com"/>
+        <parameter qname="pns:update" xmlns:pns="http://facade.service.br.com" type="tns:ActivityVO" xmlns:tns="http://valueObject.service.br.com"/>
+      </operation>
+      <operation name="updateDeveloperOnProject" qname="operNS:updateDeveloperOnProject" xmlns:operNS="http://facade.service.br.com" returnQName="retNS:updateDeveloperOnProjectReturn" xmlns:retNS="http://facade.service.br.com" returnType="rtns:boolean" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:project" xmlns:pns="http://facade.service.br.com" type="tns:ProjectVO" xmlns:tns="http://valueObject.service.br.com"/>
+        <parameter qname="pns:developer" xmlns:pns="http://facade.service.br.com" type="tns:DeveloperVO" xmlns:tns="http://valueObject.service.br.com"/>
+        <parameter qname="pns:update" xmlns:pns="http://facade.service.br.com" type="tns:DeveloperVO" xmlns:tns="http://valueObject.service.br.com"/>
+      </operation>
+      <operation name="sendMessageOnProject" qname="operNS:sendMessageOnProject" xmlns:operNS="http://facade.service.br.com" returnQName="retNS:sendMessageOnProjectReturn" xmlns:retNS="http://facade.service.br.com" returnType="rtns:boolean" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:project" xmlns:pns="http://facade.service.br.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:message" xmlns:pns="http://facade.service.br.com" type="tns:MessageVO" xmlns:tns="http://valueObject.service.br.com"/>
+      </operation>
+      <operation name="findDevelopersOnProject" qname="operNS:findDevelopersOnProject" xmlns:operNS="http://facade.service.br.com" returnQName="retNS:findDevelopersOnProjectReturn" xmlns:retNS="http://facade.service.br.com" returnType="rtns:DeveloperVO" xmlns:rtns="http://valueObject.service.br.com" soapAction="" >
+        <parameter qname="pns:project" xmlns:pns="http://facade.service.br.com" type="tns:ProjectVO" xmlns:tns="http://valueObject.service.br.com"/>
+      </operation>
+      <operation name="findUserMessagesOnProject" qname="operNS:findUserMessagesOnProject" xmlns:operNS="http://facade.service.br.com" returnQName="retNS:findUserMessagesOnProjectReturn" xmlns:retNS="http://facade.service.br.com" returnType="rtns:MessageVO" xmlns:rtns="http://valueObject.service.br.com" soapAction="" >
+        <parameter qname="pns:messageVO" xmlns:pns="http://facade.service.br.com" type="tns:MessageVO" xmlns:tns="http://valueObject.service.br.com"/>
+      </operation>
+      <operation name="findActivitiesOnProject" qname="operNS:findActivitiesOnProject" xmlns:operNS="http://facade.service.br.com" returnQName="retNS:findActivitiesOnProjectReturn" xmlns:retNS="http://facade.service.br.com" returnType="rtns:ActivityVO" xmlns:rtns="http://valueObject.service.br.com" soapAction="" >
+        <parameter qname="pns:project" xmlns:pns="http://facade.service.br.com" type="tns:ProjectVO" xmlns:tns="http://valueObject.service.br.com"/>
+      </operation>
+      <operation name="sendSystemMessageOnProject" qname="operNS:sendSystemMessageOnProject" xmlns:operNS="http://facade.service.br.com" returnQName="retNS:sendSystemMessageOnProjectReturn" xmlns:retNS="http://facade.service.br.com" returnType="rtns:boolean" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:project" xmlns:pns="http://facade.service.br.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:message" xmlns:pns="http://facade.service.br.com" type="tns:MessageVO" xmlns:tns="http://valueObject.service.br.com"/>
+      </operation>
+      <operation name="findSystemMessagesOnProject" qname="operNS:findSystemMessagesOnProject" xmlns:operNS="http://facade.service.br.com" returnQName="retNS:findSystemMessagesOnProjectReturn" xmlns:retNS="http://facade.service.br.com" returnType="rtns:MessageVO" xmlns:rtns="http://valueObject.service.br.com" soapAction="" >
+        <parameter qname="pns:messageVO" xmlns:pns="http://facade.service.br.com" type="tns:MessageVO" xmlns:tns="http://valueObject.service.br.com"/>
+      </operation>
+      <operation name="addDeveloperOnProject" qname="operNS:addDeveloperOnProject" xmlns:operNS="http://facade.service.br.com" returnQName="retNS:addDeveloperOnProjectReturn" xmlns:retNS="http://facade.service.br.com" returnType="rtns:boolean" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:project" xmlns:pns="http://facade.service.br.com" type="tns:ProjectVO" xmlns:tns="http://valueObject.service.br.com"/>
+        <parameter qname="pns:developer" xmlns:pns="http://facade.service.br.com" type="tns:DeveloperVO" xmlns:tns="http://valueObject.service.br.com"/>
+      </operation>
+      <operation name="removeActivityOnProject" qname="operNS:removeActivityOnProject" xmlns:operNS="http://facade.service.br.com" returnQName="retNS:removeActivityOnProjectReturn" xmlns:retNS="http://facade.service.br.com" returnType="rtns:boolean" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:project" xmlns:pns="http://facade.service.br.com" type="tns:ProjectVO" xmlns:tns="http://valueObject.service.br.com"/>
+        <parameter qname="pns:activity" xmlns:pns="http://facade.service.br.com" type="tns:ActivityVO" xmlns:tns="http://valueObject.service.br.com"/>
+      </operation>
+      <operation name="findDeveloperOnProject" qname="operNS:findDeveloperOnProject" xmlns:operNS="http://facade.service.br.com" returnQName="retNS:findDeveloperOnProjectReturn" xmlns:retNS="http://facade.service.br.com" returnType="rtns:DeveloperVO" xmlns:rtns="http://valueObject.service.br.com" soapAction="" >
+        <parameter qname="pns:developerVO" xmlns:pns="http://facade.service.br.com" type="tns:DeveloperVO" xmlns:tns="http://valueObject.service.br.com"/>
+      </operation>
+      <operation name="removeDeveloperOnProject" qname="operNS:removeDeveloperOnProject" xmlns:operNS="http://facade.service.br.com" returnQName="retNS:removeDeveloperOnProjectReturn" xmlns:retNS="http://facade.service.br.com" returnType="rtns:boolean" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:project" xmlns:pns="http://facade.service.br.com" type="tns:ProjectVO" xmlns:tns="http://valueObject.service.br.com"/>
+        <parameter qname="pns:developer" xmlns:pns="http://facade.service.br.com" type="tns:DeveloperVO" xmlns:tns="http://valueObject.service.br.com"/>
+      </operation>
+      <operation name="addActivityOnProject" qname="operNS:addActivityOnProject" xmlns:operNS="http://facade.service.br.com" returnQName="retNS:addActivityOnProjectReturn" xmlns:retNS="http://facade.service.br.com" returnType="rtns:boolean" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:project" xmlns:pns="http://facade.service.br.com" type="tns:ProjectVO" xmlns:tns="http://valueObject.service.br.com"/>
+        <parameter qname="pns:activity" xmlns:pns="http://facade.service.br.com" type="tns:ActivityVO" xmlns:tns="http://valueObject.service.br.com"/>
+      </operation>
+      <operation name="addProject" qname="operNS:addProject" xmlns:operNS="http://facade.service.br.com" returnQName="retNS:addProjectReturn" xmlns:retNS="http://facade.service.br.com" returnType="rtns:boolean" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:project" xmlns:pns="http://facade.service.br.com" type="tns:ProjectVO" xmlns:tns="http://valueObject.service.br.com"/>
+      </operation>
+      <parameter name="allowedMethods" value="findDeveloperOnProject addDeveloperOnProject removeProject findDevelopersOnProject updateProject removeDeveloperOnProject updateActivityOnProject sendSystemMessageOnProject addActivityOnProject findProjects findUserMessagesOnProject findSystemMessagesOnProject findActivitiesOnProject addProject removeActivityOnProject updateDeveloperOnProject sendMessageOnProject"/>
+
+      <typeMapping
+        xmlns:ns="http://valueObject.service.br.com"
+        qname="ns:ProjectVO"
+        type="java:com.br.service.valueObject.ProjectVO"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://valueObject.service.br.com"
+        qname="ns:DeveloperVO"
+        type="java:com.br.service.valueObject.DeveloperVO"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://valueObject.service.br.com"
+        qname="ns:ActivityVO"
+        type="java:com.br.service.valueObject.ActivityVO"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://valueObject.service.br.com"
+        qname="ns:MessageVO"
+        type="java:com.br.service.valueObject.MessageVO"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+  </service>
+</deployment>

@@ -1,0 +1,1684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="" >
+<node_order><![CDATA[]]></node_order>
+<details><![CDATA[]]> 
+</details><testsuite name="Suíte Teste Funcional - Funcionalidade Perform Login" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[<p>Su&iacute;te que compreende os casos de teste da funcionalidade Perform Login, Vers&atilde;o 2.0 do plugin.</p>]]> 
+</details>
+<testcase internalid="4" name="Caso de Teste 01">
+	<node_order><![CDATA[100]]></node_order>
+	<externalid><![CDATA[1]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade de login, dispon&iacute;vel no form &quot;Perform Login&quot;.</p>
+<p>Este caso de teste visa detectar se um login &eacute; efetuado sem que nenhum campo obrigat&oacute;rio seja informado.</p>
+<p>Campos Obrigatorios: &quot;Login&quot;, &quot;Password&quot; e &quot;Project&quot;.</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form &quot;Perform Login&quot;</li>
+    <li>Conhecer um login e senha v&aacute;lidos</li>
+    <li>Ter um projeto disponivel no &quot;Package Explorer&quot; do Eclipse</li>
+</ul>
+<p>&nbsp;</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Abrir o form Perform LOgin</li>
+    <li>Clicar no bot&atilde;o Finish</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>O aparecimento da mensagem &quot;Fields doesn't filled correctly&quot; como mostra a Evid&ecirc;ncia 01</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="6" name="Caso de Teste 02">
+	<node_order><![CDATA[101]]></node_order>
+	<externalid><![CDATA[2]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade de login, dispon&iacute;vel no form &quot;Perform Login&quot;.</p>
+<p>Este caso de teste visa detectar se um login &eacute; aceito sem que o campo &quot;Project&quot;&nbsp; seja informado.</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form &quot;Perform Login&quot;</li>
+    <li>Conhecer um login e senha v&aacute;lidos</li>
+    <li>Ter um projeto disponivel no &quot;Package Explorer&quot; do Eclipse</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Acessar o form &quot;Perform Login&quot;</li>
+    <li>Informar um login e senha v&aacute;lidos</li>
+    <li>Ter um projeto disponivel no &quot;Package Explorer&quot; do Eclipse</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>O aparecimento da mensagem &quot;Fields doesn't filled correctly&quot; como mostra a Evid&ecirc;ncia 02</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="8" name="Caso de Teste 03">
+	<node_order><![CDATA[102]]></node_order>
+	<externalid><![CDATA[3]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade de login, dispon&iacute;vel no form &quot;Perform Login&quot;</p>
+<p>Este caso de teste visa detectar se um login &eacute; aceito sem que o campo &quot;Login&quot; seja informado.</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form &quot;Perform Login&quot;</li>
+    <li>Conhecer um login e senha v&aacute;lidos</li>
+    <li>Ter um projeto disponivel no &quot;Package Explorer&quot; do Eclipse</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Acessar o form &quot;Perform Login&quot;</li>
+    <li>Informar uma senha e um projeto v&aacute;lidos</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>O aparecimento da mensagem &quot;Fields doesn't filled correctly&quot; como mostra a Evid&ecirc;ncia 03</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="10" name="Caso de Teste 04">
+	<node_order><![CDATA[103]]></node_order>
+	<externalid><![CDATA[4]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade de login, dispon&iacute;vel no form &quot;Perform Login&quot;.</p>
+<p>Este caso de teste visa detectar se um login &eacute; efetuado sem que o campo &quot;Password&quot;&nbsp; seja informado.</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form &quot;Perform Login&quot;</li>
+    <li>Conhecer um login e senha v&aacute;lidos</li>
+    <li>Ter um projeto disponivel no &quot;Package Explorer&quot; do Eclipse</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Ter acesso ao form &quot;Perform Login&quot;</li>
+    <li>Informar um login e projeto v&aacute;lidos</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>O aparecimento da mensagem &quot;Fields doesn't filled correctly&quot; como mostra a Evid&ecirc;ncia 04</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="16" name="Caso de Teste 05">
+	<node_order><![CDATA[104]]></node_order>
+	<externalid><![CDATA[5]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade de login, dispon&iacute;vel no form &quot;Perform Login&quot;.<br />
+<br />
+Este caso de teste visa detectar se um login &eacute; efetuado com sucesso se todos os dados forem informados corretamente.</p>
+<p><br />
+&nbsp;</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form &quot;Perform Login&quot;</li>
+    <li>Conhecer um login e senha v&aacute;lidos</li>
+    <li>Ter um projeto disponivel no &quot;Package Explorer&quot; do Eclipse</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Acessar o form &quot;Perform Login&quot;</li>
+    <li>Informar um &quot;Login&quot;, &quot;Password&quot; e &quot;Project&quot; v&aacute;lidos</li>
+    <li>Clicar no Bot&atilde;o &quot;Finish&quot;</li>
+</ul>
+<p>&nbsp;</p>]]></actions>
+	<expectedresults><![CDATA[<p>O aparecimento da mensagem &quot;Fields doesn't filled correctly&quot; como mostra a Evid&ecirc;ncia 05 e Evid&ecirc;ncia 06</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="19" name="Caso de Teste 06">
+	<node_order><![CDATA[105]]></node_order>
+	<externalid><![CDATA[6]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade de login, dispon&iacute;vel no form &quot;Perform Login&quot;.<br />
+<br />
+Este caso de teste visa detectar se o logon no sistema pode ser efetuado caso seja informado um login inv&aacute;lido, no campo &quot;Login&quot;, mesmo que a senha e o projeto sejam v&aacute;lidos.&nbsp;</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form &quot;Perform Login&quot;</li>
+    <li>Conhecer um login inv&aacute;lido e uma senha v&aacute;lida</li>
+    <li>Ter um projeto disponivel no &quot;Package Explorer&quot; do Eclipse</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Acessar o form &quot;Perform Login&quot;</li>
+    <li>Inserir o login &quot;usuariomaster&quot;</li>
+    <li>Inserir uma senha v&aacute;lida (senha conhecida de um usu&aacute;rio cadastrado).</li>
+    <li>Selecionar um projeto no combobox &quot;Project&quot;</li>
+    <li>Clicar no bot&atilde;o &quot;Finish&quot;.</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se visualizar a mensagem &quot;Login not performed&quot;, como pode ser visto na Evid&ecirc;ncia 07</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="21" name="Caso de Teste 07">
+	<node_order><![CDATA[106]]></node_order>
+	<externalid><![CDATA[7]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade de login, dispon&iacute;vel no form &quot;Perform Login&quot;.<br />
+<br />
+Este caso de teste visa detectar se o logon no sistema pode ser efetuado  caso seja informado uma senha&nbsp; inv&aacute;lida, no campo &quot;Password&quot;, mesmo que o ligin e o projeto sejam v&aacute;lidos.&nbsp;</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form &quot;Perform Login&quot;</li>
+    <li>Conhecer uma senha inv&aacute;lida e um login v&aacute;lido</li>
+    <li>Ter um projeto disponivel no &quot;Package Explorer&quot; do Eclipse</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Acessar o form &quot;Perform Login&quot;</li>
+    <li>Inserir o login &quot;usuariomaster&quot;</li>
+    <li>Inserir uma senha v&aacute;lida (senha conhecida de um usu&aacute;rio cadastrado).</li>
+    <li>Selecionar um projeto no combobox &quot;Project&quot;</li>
+    <li>Clicar no bot&atilde;o &quot;Finish&quot;.</li>
+</ul>
+<p>&nbsp;</p>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se visualizar a mensagem &quot;Login not performed&quot;, como pode ser visto na Evid&ecirc;ncia 08</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="25" name="Caso de Teste 08">
+	<node_order><![CDATA[107]]></node_order>
+	<externalid><![CDATA[8]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade de login, dispon&iacute;vel no form &quot;Perform Login&quot;.</p>
+<p>&nbsp;</p>
+<p>Este caso de teste visa detectar se o logoff no sistema pode ser efetuado com sucesso.</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form &quot;Perform Login&quot;</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Acessar o form &quot;Perform Login&quot;, estando um usu&aacute;rio qualquer logado no sistema.</li>
+    <li>Clicar no bot&atilde;o &quot;Disconect&quot;.</li>
+    <li>Clicar no bot&atilde;o &quot;Finish&quot;</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que apare&ccedil;a a mensagem &quot;Login Disconected&quot; e &quot;User disconected&quot;, como pode ser visto na Evid&ecirc;ncia 09</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite name="Suíte Teste Funcional - Funcionalidade Activity" >
+<node_order><![CDATA[2]]></node_order>
+<details><![CDATA[<p>Su&iacute;te que compreende os casos de teste das funcionalidades referentes a Activitys, Vers&atilde;o 2.0 do plugin.</p>]]> 
+</details>
+<testcase internalid="29" name="Caso de Teste 01">
+	<node_order><![CDATA[100]]></node_order>
+	<externalid><![CDATA[9]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade sele&ccedil;&atilde;o de atividades, acess&iacute;vel pelo form &quot;Activity Selection&quot;.</p>
+<p>Este caso de teste visa certificar se a sele&ccedil;&atilde;o autom&aacute;tica da atividade Default est&aacute; funcionando corretamente. A sele&ccedil;&atilde;o autom&aacute;tica aplica-se quando o usu&aacute;rio n&atilde;o definiu a atividade que ir&aacute; trabalhar.</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acabado de efetuar login no sistema.</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Acessar o form &quot;Perform Login&quot;.</li>
+    <li>Efetuar o login</li>
+    <li>Visualizar o form &quot;Activity Selection&quot;</li>
+    <li>Clicar com o bot&atilde;o esquerdo do mouse em qualquer &aacute;rea do ambiente Eclipse (como o Package Explorer)</li>
+    <li>Clicar no menu &quot;Utility View&quot;.</li>
+    <li>Selecionar &quot;Collaboration View&quot;</li>
+    <li>Clicar no bot&atilde;o OK</li>
+</ul>
+<p>&nbsp;</p>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que o form &quot;Activity Selection&quot; seja fechado automaticamente e a atividade Default seja habilitada (refere-se a primeira atividade visualiz&aacute;vel no combobox de atividades, como pode ser visto na Evid&ecirc;ncia 01 e na Evid&ecirc;ncia 02.</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="32" name="Caso de Teste 02">
+	<node_order><![CDATA[101]]></node_order>
+	<externalid><![CDATA[10]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade sele&ccedil;&atilde;o de atividades, acess&iacute;vel pelo form &quot;Activity Selection&quot;.</p>
+<p>Este caso de teste visa certificar se a sele&ccedil;&atilde;o de uma  atividade qualquer est&aacute; sendo efetuada corretamente.</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acabado de efetuar login no sistema.</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Acessar o form &quot;Perform Login&quot;.</li>
+    <li>Efetuar o login</li>
+    <li>Visualizar o form &quot;Activity Selection&quot;</li>
+    <li>Selecionar a Atividade 222</li>
+    <li>Clicar no bot&atilde;o de OK</li>
+    <li>Clicar no menu &quot;Utility View&quot;.</li>
+    <li>Selecionar &quot;Collaboration View&quot;</li>
+    <li>Clicar no bot&atilde;o OK</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que o form &quot;Activity Selection&quot; seja fechado automaticamente ap&oacute;s a sele&ccedil;&atilde;o da Atividade 222 e o clique no bot&atilde;o OK, como pode ser visto na Evid&ecirc;ncia  03. A Evid&ecirc;ncia 04 confirma que a atividade foi selecionada com sucesso..</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="35" name="Caso de Teste 03">
+	<node_order><![CDATA[102]]></node_order>
+	<externalid><![CDATA[11]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade &quot;Manage Actiivity&quot;, quanto a sua capacidade de buscar (Search) todas as atividades cadastradas se nenhum nome de atividade for definido no campo &quot;Activity Name&quot;.</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form &quot;Manage Activitys&quot;.</li>
+    <li>N&atilde;o posuir nenhuma string de busca no campo &quot;Activity Name&quot;.</li>
+    <li>Conhecer a lista completa de atividades cadastradas para fins de confer&ecirc;ncia.</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Acessar o menu &quot;Collaborative&quot;.</li>
+    <li>Selecionar a op&ccedil;&atilde;o &quot;Manage Activities&quot;.</li>
+    <li>Clicar no bot&atilde;o &quot;Search&quot;.</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que todas as atividades cadastradas sejam listadas, como pode ser visto na Evid&ecirc;ncia 05.</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="38" name="Caso de Teste 04">
+	<node_order><![CDATA[103]]></node_order>
+	<externalid><![CDATA[12]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade &quot;Manage Actiivity&quot;,  quanto a sua capacidade  de buscar (Search) uma dada atividade existente (cadastrada).</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form &quot;Manage Activitys&quot;.</li>
+    <li>Conhecer uma atividade existente (cadastrada).</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Acessar o menu &quot;Collaborative&quot;.</li>
+    <li>Selecionar a op&ccedil;&atilde;o &quot;Manage Activities&quot;.</li>
+    <li>Inserir no campo /'Activity name&quot; o nome de uma atividade existente (cadastrada)</li>
+    <li>Clicar no bot&atilde;o &quot;Search&quot;.</li>
+</ul>
+<p>&nbsp;</p>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que a atividade fornecida seja listada e que a mensagem &quot;Activities found&quot; seja exibida, como pode ser visto na Evid&ecirc;ncia 06</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="41" name="Caso de Teste 05">
+	<node_order><![CDATA[104]]></node_order>
+	<externalid><![CDATA[13]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade &quot;Manage Actiivity&quot;,   quanto a sua capacidade  de buscar (Search) uma dada atividade inexistente  (n&atilde;o cadastrada)</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form &quot;Manage Activitys&quot;.</li>
+    <li>Conhecer uma atividade inexistente (n&atilde;o cadastrada)</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Acessar o menu &quot;Collaborative&quot;.</li>
+    <li>Selecionar a op&ccedil;&atilde;o &quot;Manage Activities&quot;.</li>
+    <li>Inserir no campo &quot;Activity name&quot; o nome de uma atividade inexistente (cadastrada)</li>
+    <li>Clicar no bot&atilde;o &quot;Search&quot;.</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que a atividade fornecida n&atilde;o seja listada e que a mensagem &quot;No Activities found&quot; seja exibida, como pode ser visto na Evid&ecirc;ncia 07</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="44" name="Caso de Teste 06">
+	<node_order><![CDATA[105]]></node_order>
+	<externalid><![CDATA[14]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade &quot;Manage Activities&quot; no que diz respeito a capacidade de evitar que atividades duplicadas sejam cadastradas.</p>
+<p>&nbsp;</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form &quot;Manage Activitys&quot;.</li>
+    <li>Conhecer uma atividade existente (cadastrada).</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Acessar o menu &quot;Collaborative&quot;.</li>
+    <li>Selecionar a op&ccedil;&atilde;o &quot;Manage Activities&quot;.</li>
+    <li>Inserir no campo &quot;Activity name&quot; o nome de uma atividade existente (cadastrada)</li>
+    <li>Clicar no bot&atilde;o &quot;Register&quot;.</li>
+</ul>
+<p>&nbsp;</p>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que a atividade fornecida n&atilde;o seja duplicada e que a mensagem  &quot;Activitiy already exists&quot; seja exibida, como pode ser visto na Evid&ecirc;ncia 08</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="47" name="Caso de Teste 07">
+	<node_order><![CDATA[106]]></node_order>
+	<externalid><![CDATA[15]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade &quot;Manage Activities&quot; no que diz respeito a  capacidade de cadastrar novas atividades.</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form &quot;Manage Activitys&quot;.</li>
+    <li>Conhecer uma atividade inexistente (que n&atilde;o tenha sido cadastrada).</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Acessar o menu &quot;Collaborative&quot;.</li>
+    <li>Selecionar a op&ccedil;&atilde;o &quot;Manage Activities&quot;.</li>
+    <li>Inserir no campo &quot;Activity name&quot; o nome de uma atividade ineexistente (que n&atilde;o tenha sido cadastrada)</li>
+    <li>Clicar no bot&atilde;o &quot;Register&quot;.</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que a atividade fornecida seja cadastrada e que a mensagem   &quot;Activitiy registered successfully!&quot; seja exibida, como pode ser visto na  Evid&ecirc;ncia 09</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="50" name="Caso de Teste 08">
+	<node_order><![CDATA[107]]></node_order>
+	<externalid><![CDATA[16]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade &quot;Manage Activities&quot; no que diz respeito a  capacidade de atualizar uma atividade selecionada</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form &quot;Manage Activitys&quot;.</li>
+    <li>Ter listado a atividade que deseja atualizar</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Selecionar a atividade para atualiza&ccedil;&atilde;o</li>
+    <li>Editar o nome da atividade no campo &quot;Activity name&quot;</li>
+    <li>Clicar no bot&atilde;o &quot;Update&quot;</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que a atividade seja atualizada e que a mensagem    &quot;Update done&quot; seja exibida,&nbsp; como pode ser visto  na  Evid&ecirc;ncia 10</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="53" name="Caso de Teste 09">
+	<node_order><![CDATA[108]]></node_order>
+	<externalid><![CDATA[17]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade &quot;Manage Activities&quot; no que diz respeito a  capacidade cancelar a edi&ccedil;&atilde;o de uma atividade</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form &quot;Manage Activitys&quot;.</li>
+    <li>Ter listado a atividade que deseja atualizar.</li>
+    <li>Ter selecionado a atividade para atualiza&ccedil;&atilde;o.</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Buscar por uma atividade existente (cadastrada)</li>
+    <li>Selecionar a atividade para atualiza&ccedil;&atilde;o</li>
+    <li>Clicar no bot&atilde;o &quot;Calcel Edit&quot;</li>
+    <li>Buscar novamente pela atividade cuja edi&ccedil;&atilde;o foi cancelada</li>
+    <li>Certificar-se que ela n&atilde;o foi alterada</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que a atividade n&atilde;o seja atualizada e que a mensagem    &quot;Register, update and remove activities from de current project&quot; seja exibida,&nbsp; como pode ser visto  na  Evid&ecirc;ncia 11 e na Evid&ecirc;ncia 12</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="56" name="Caso de Teste 10">
+	<node_order><![CDATA[109]]></node_order>
+	<externalid><![CDATA[18]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade &quot;Manage Activities&quot; no que diz respeito a  capacidade desativa&ccedil;&atilde;o de uma atividade</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form &quot;Manage Activitys&quot;.</li>
+    <li>Ter listado a atividade que deseja desativar.</li>
+    <li>Ter selecionado a atividade para desativar</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Buscar por uma atividade existente (cadastrada)</li>
+    <li>Selecionar a atividade para desativa&ccedil;&atilde;o</li>
+    <li>Clicar no bot&atilde;o &quot;Deactive&quot;.</li>
+    <li>Buscar novamente pela atividade rec&ecirc;m desativada</li>
+    <li>Certificar-se que ela&nbsp; foi desativada</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que a atividade seja desativada e que a mensagem     &quot;Activity&nbsp; deactivated sucessfully&quot; seja  exibida,&nbsp; como pode ser visto  na  Evid&ecirc;ncia 13</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite name="Suíte Teste Funcional - Funcionalidade Manage Projects" >
+<node_order><![CDATA[3]]></node_order>
+<details><![CDATA[<p>Su&iacute;te que compreende os casos de teste da funcionalidade &quot;Manage Project, Vers&atilde;o 2.0 do plugin.</p>]]> 
+</details>
+<testcase internalid="91" name="Caso de Teste 01">
+	<node_order><![CDATA[102]]></node_order>
+	<externalid><![CDATA[29]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade &quot;Manage Project&quot;, quanto a sua capacidade de buscar (Search) todos os projetos cadastrados se nenhum nome de projeto for definido no campo &quot;Project Name&quot;.</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form &quot;Manage Projects&quot;.</li>
+    <li>N&atilde;o posuir nenhuma string de busca no campo &quot;Project Name&quot;.</li>
+    <li>Conhecer a lista completa de projetos cadastrados para fins de confer&ecirc;ncia.</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Acessar o menu &quot;Collaborative&quot;.</li>
+    <li>Selecionar a op&ccedil;&atilde;o &quot;Manage Projects&quot;.</li>
+    <li>Clicar no bot&atilde;o &quot;Search&quot;.</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que todos os projetos&nbsp; cadastrados sejam listados, como pode ser visto na Evid&ecirc;ncia 01.</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="94" name="Caso de Teste 02">
+	<node_order><![CDATA[103]]></node_order>
+	<externalid><![CDATA[30]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade &quot;Manage Projects&quot;,  quanto a sua capacidade  de buscar (Search) um dado projeto existente (cadastrado).</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form &quot;Manage Projects&quot;.</li>
+    <li>Conhecer um projeto existente (cadastrado).</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Acessar o menu &quot;Collaborative&quot;.</li>
+    <li>Selecionar a op&ccedil;&atilde;o &quot;Manage Projects&quot;.</li>
+    <li>Inserir no campo &quot;Project name&quot; o nome de um projeto existente (cadastrado)</li>
+    <li>Clicar no bot&atilde;o &quot;Search&quot;.</li>
+</ul>
+<p>&nbsp;</p>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que o projeto fornecido seja listado e que a mensagem &quot;Project found&quot; seja exibida, como pode ser visto na Evid&ecirc;ncia 02</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="97" name="Caso de Teste 03">
+	<node_order><![CDATA[104]]></node_order>
+	<externalid><![CDATA[31]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade &quot;Manage Project&quot;,   quanto a sua capacidade  de buscar (Search) um dado projeto inexistente  (n&atilde;o cadastrado)</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form &quot;Manage Projects&quot;.</li>
+    <li>Conhecer um projeto inexistente (n&atilde;o cadastrado)</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Acessar o menu &quot;Collaborative&quot;.</li>
+    <li>Selecionar a op&ccedil;&atilde;o &quot;Manage Projects&quot;.</li>
+    <li>Inserir no campo &quot;Project name&quot; o nome de um projeto inexistente ( n&atilde;o cadastrado)</li>
+    <li>Clicar no bot&atilde;o &quot;Search&quot;.</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que o projeto&nbsp; fornecido n&atilde;o seja listado e que a mensagem &quot;No Projects found&quot; seja exibida, como pode ser visto na Evid&ecirc;ncia 03</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="100" name="Caso de Teste 04">
+	<node_order><![CDATA[105]]></node_order>
+	<externalid><![CDATA[32]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade &quot;Manage Projects&quot; no que diz respeito a capacidade de evitar que projetos duplicados sejam cadastrados.</p>
+<p>&nbsp;</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form &quot;Manage Projects&quot;.</li>
+    <li>Conhecer um projeto existente (cadastrado).</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Acessar o menu &quot;Collaborative&quot;.</li>
+    <li>Selecionar a op&ccedil;&atilde;o &quot;Manage Projects&quot;.</li>
+    <li>Inserir no campo &quot;Projects name&quot; o nome de um projeto existente (cadastrado)</li>
+    <li>Clicar no bot&atilde;o &quot;Register&quot;.</li>
+</ul>
+<p>&nbsp;</p>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que o projeto fornecido n&atilde;o seja cadastrad (duplicado) e que a mensagem  &quot;Project already exists&quot; seja exibida, como pode ser visto na Evid&ecirc;ncia 04</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="103" name="Caso de Teste 05">
+	<node_order><![CDATA[106]]></node_order>
+	<externalid><![CDATA[33]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade &quot;Manage Projects&quot; no que diz respeito a  capacidade de cadastrar novos projetos.</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form &quot;Manage Projects&quot;.</li>
+    <li>Conhecer um projeto inexistente (que n&atilde;o tenha sido cadastrado).</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Acessar o menu &quot;Collaborative&quot;.</li>
+    <li>Selecionar a op&ccedil;&atilde;o &quot;Manage Projects&quot;.</li>
+    <li>Inserir no campo &quot;Project name&quot; o nome de um projeto ineexistente (que n&atilde;o tenha sido cadastrado)</li>
+    <li>Clicar no bot&atilde;o &quot;Register&quot;.</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que o projeto fornecido seja cadastrado e que a mensagem   &quot;Projetct registered successfully!&quot; seja exibida, como pode ser visto na  Evid&ecirc;ncia 05</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="106" name="Caso de Teste 06">
+	<node_order><![CDATA[107]]></node_order>
+	<externalid><![CDATA[34]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade &quot;Manage Projects&quot; no que diz respeito a  capacidade de atualizar um projeto selecionado</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form &quot;Manage Projects&quot;.</li>
+    <li>Ter listado o projeto que deseja atualizar</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Selecionar o projeto para atualiza&ccedil;&atilde;o</li>
+    <li>Editar o nome do projeto no campo &quot;Project name&quot;</li>
+    <li>Clicar no bot&atilde;o &quot;Update&quot;</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que o projeto seja atualizado e que a mensagem    &quot;Update done&quot; seja exibida,&nbsp; como pode ser visto  na  Evid&ecirc;ncia 06</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="109" name="Caso de Teste 07">
+	<node_order><![CDATA[108]]></node_order>
+	<externalid><![CDATA[35]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade &quot;Manage Projects&quot; no que diz respeito a  capacidade cancelar a edi&ccedil;&atilde;o de um projeto</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form &quot;Manage Projects&quot;.</li>
+    <li>Ter listado o projeto que deseja atualizar.</li>
+    <li>Ter selecionado o projeto para atualiza&ccedil;&atilde;o.</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Buscar por um projeto existente (cadastrado)</li>
+    <li>Selecionar o projeto para atualiza&ccedil;&atilde;o</li>
+    <li>Clicar no bot&atilde;o &quot;Calcel Edit&quot;</li>
+    <li>Buscar novamente pelo projeto cuja edi&ccedil;&atilde;o foi cancelada</li>
+    <li>Certificar-se que ele n&atilde;o foi alterado</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que o projeto n&atilde;o seja atualizado e que a mensagem    &quot;Register, update and remove projects&quot; seja exibida,&nbsp; como pode ser visto  na  Evid&ecirc;ncia 07 e na Evid&ecirc;ncia 08</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="112" name="Caso de Teste 08">
+	<node_order><![CDATA[109]]></node_order>
+	<externalid><![CDATA[36]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade &quot;Manage Project&quot; no que diz respeito a  capacidade de desativa&ccedil;&atilde;o de um projeto</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form &quot;Manage Project&quot;.</li>
+    <li>Ter listado o projeto que deseja desativar.</li>
+    <li>Ter selecionado o projeto para desativar</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Buscar por um projeto existente (cadastrado)</li>
+    <li>Selecionar o projeto para desativa&ccedil;&atilde;o</li>
+    <li>Clicar no bot&atilde;o &quot;Deactive&quot;.</li>
+    <li>Buscar novamente pelo projeto rec&ecirc;m desativado</li>
+    <li>Certificar-se que ele&nbsp; foi desativado</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que o projeto seja desativado e que a mensagem     &quot;Project deactivated sucessfully&quot; seja  exibida,&nbsp; como pode ser visto  na  Evid&ecirc;ncia 09</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite name="Suíte Teste Funcional - Funcionalidade Management  Developers" >
+<node_order><![CDATA[4]]></node_order>
+<details><![CDATA[<p>Su&iacute;te que compreende os casos de teste da funcionalidade &quot;Manage Developer&quot;, Vers&atilde;o 2.0 do plugin.</p>]]> 
+</details>
+<testcase internalid="116" name="Caso de Teste 01">
+	<node_order><![CDATA[102]]></node_order>
+	<externalid><![CDATA[37]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade &quot;Manage Developers&quot;, quanto a sua capacidade de buscar (Search) todos os desenvolvedores cadastrados se nenhum nome de desenvolvedor for definido no campo &quot;Name&quot;.</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form &quot;Manage Developers&quot;.</li>
+    <li>N&atilde;o posuir nenhuma string de busca no campo &quot;Name&quot;.</li>
+    <li>Conhecer a lista completa de desenvolvedores cadastrados para fins de confer&ecirc;ncia.</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Acessar o menu &quot;Collaborative&quot;.</li>
+    <li>Selecionar a op&ccedil;&atilde;o &quot;Manage Developers&quot;.</li>
+    <li>Clicar no bot&atilde;o &quot;Search&quot;.</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que todos os desenvolvedores cadastrados sejam listados, como pode ser visto na Evid&ecirc;ncia 01.</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="119" name="Caso de Teste 02">
+	<node_order><![CDATA[103]]></node_order>
+	<externalid><![CDATA[38]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade &quot;Manage Developers&quot;,  quanto a sua capacidade  de buscar (Search) um dado desenvolvedor existente (cadastrado).</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form &quot;Manage Developers&quot;.</li>
+    <li>Conhecer um desenvolvedor existente (cadastrado).</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Acessar o menu &quot;Collaborative&quot;.</li>
+    <li>Selecionar a op&ccedil;&atilde;o &quot;Manage Developers&quot;.</li>
+    <li>Inserir no campo &quot;Name&quot; o nome de um desenvolvedor existente (cadastrado)</li>
+    <li>Clicar no bot&atilde;o &quot;Search&quot;.</li>
+</ul>
+<p>&nbsp;</p>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que o desenvolvedor fornecido seja listado e que a mensagem &quot;Developer found&quot; seja exibida, como pode ser visto na Evid&ecirc;ncia 02</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="122" name="Caso de Teste 03">
+	<node_order><![CDATA[104]]></node_order>
+	<externalid><![CDATA[39]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade &quot;Manage Developers&quot;,   quanto a sua capacidade  de buscar (Search) um dado desenvolvedor inexistente  (n&atilde;o cadastrado)</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form &quot;Manage Developers&quot;.</li>
+    <li>Conhecer um desenvolvedor inexistente (n&atilde;o cadastrado)</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Acessar o menu &quot;Collaborative&quot;.</li>
+    <li>Selecionar a op&ccedil;&atilde;o &quot;Manage Developers&quot;.</li>
+    <li>Inserir no campo &quot;Name&quot; o nome de um desenvolvedor inexistente ( n&atilde;o cadastrado)</li>
+    <li>Clicar no bot&atilde;o &quot;Search&quot;.</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que o desenvolvedor fornecido n&atilde;o seja listado e que a mensagem &quot;No Developers found&quot; seja exibida, como pode ser visto na Evid&ecirc;ncia 03</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="125" name="Caso de Teste 04">
+	<node_order><![CDATA[105]]></node_order>
+	<externalid><![CDATA[40]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade &quot;Manage Developers&quot; no que diz respeito a capacidade de evitar que desenvolvedores duplicados sejam cadastrados.</p>
+<p>&nbsp;</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form &quot;Manage Developers&quot;.</li>
+    <li>Conhecer um desenvolvedor existente (cadastrado).</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Acessar o menu &quot;Collaborative&quot;.</li>
+    <li>Selecionar a op&ccedil;&atilde;o &quot;Manage Developers&quot;.</li>
+    <li>Inserir os dados de um desenvolvedor existente (cadastrado)</li>
+    <li>Clicar no bot&atilde;o &quot;Register&quot;.</li>
+</ul>
+<p>&nbsp;</p>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que o desenvolvedor fornecido n&atilde;o seja cadastrado (duplicado) e que a mensagem  &quot;Developer already exists&quot; seja exibida, como pode ser visto na Evid&ecirc;ncia 04</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="128" name="Caso de Teste 05">
+	<node_order><![CDATA[106]]></node_order>
+	<externalid><![CDATA[41]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade &quot;Manage Developers&quot; no que diz respeito a  capacidade de cadastrar novos desenvolvedores quando se conhece todos os dados cadastrais para preencher todos os campos do form &quot;Manage Developers&quot;.</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form &quot;Manage Developers&quot;.</li>
+    <li>Conhecer um desenvolvedor inexistente (que n&atilde;o tenha sido cadastrado).</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Acessar o menu &quot;Collaborative&quot;.</li>
+    <li>Selecionar a op&ccedil;&atilde;o &quot;Manage Developers&quot;.</li>
+    <li>Inserir no campo &quot;UserName&quot; o nome de um desenvolvedor inexistente (que n&atilde;o tenha sido cadastrado)</li>
+    <li>Clicar no bot&atilde;o &quot;Register&quot;.</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que o desenvolvedor fornecido seja cadastrado e que a mensagem   &quot;Developer registered successfully!&quot; seja exibida, como pode ser visto na  Evid&ecirc;ncia 05</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="131" name="Caso de Teste 06">
+	<node_order><![CDATA[107]]></node_order>
+	<externalid><![CDATA[42]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade &quot;Manage Developers&quot; no que diz respeito a  capacidade de atualizar um desenvolvedor selecionado</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form &quot;Manage Developers&quot;.</li>
+    <li>Ter listado o desenvolvedor que deseja atualizar</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Selecionar o desenvolvedor para atualiza&ccedil;&atilde;o</li>
+    <li>Alterar todos os campos do form &quot;Manage Developers&quot;</li>
+    <li>Clicar no bot&atilde;o &quot;Update&quot;</li>
+    <li>Visualize o cadastro atualizado e verifique as novas informa&ccedil;&otilde;es</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que o desenvolvedor seja atualizado e que a mensagem    &quot;Update done&quot; seja exibida,&nbsp; como pode ser visto  na  Evid&ecirc;ncia 06</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="134" name="Caso de Teste 07">
+	<node_order><![CDATA[108]]></node_order>
+	<externalid><![CDATA[43]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade &quot;Manage Developers&quot; no que diz respeito a  capacidade cancelar a edi&ccedil;&atilde;o de um desenvolvedor</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form &quot;Manage Developers&quot;.</li>
+    <li>Ter listado o desenvolvedor que deseja atualizar.</li>
+    <li>Ter selecionado o desenvolvedor para atualiza&ccedil;&atilde;o.</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Buscar por um desenvolvedor existente (cadastrado)</li>
+    <li>Selecionar o desenvolvedor para atualiza&ccedil;&atilde;o</li>
+    <li>Clicar no bot&atilde;o &quot;Cancel Edit&quot;</li>
+    <li>Buscar novamente pelo desenvolvedor cuja edi&ccedil;&atilde;o foi cancelada</li>
+    <li>Certificar-se que ele n&atilde;o foi alterado</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que o desenvolvedor n&atilde;o seja atualizado e que a mensagem    &quot;Register, update and remove developers&quot; seja exibida,&nbsp; como pode ser visto  na  Evid&ecirc;ncia 07 e na Evid&ecirc;ncia 08</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="137" name="Caso de Teste 08">
+	<node_order><![CDATA[109]]></node_order>
+	<externalid><![CDATA[44]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade &quot;Manage Developers&quot; no que diz respeito a  capacidade de desativa&ccedil;&atilde;o de um desenvolvedor</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form &quot;Manage Developers&quot;.</li>
+    <li>Ter listado o desenvolvedor que deseja desativar.</li>
+    <li>Ter selecionado o desenvolvedor para desativar</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Buscar por um desenvolvedor existente (cadastrado)</li>
+    <li>Selecionar o desenvolvedor para desativa&ccedil;&atilde;o</li>
+    <li>Clicar no bot&atilde;o &quot;Deactive&quot;.</li>
+    <li>Buscar novamente pelo desnvolvedor rec&ecirc;m desativado</li>
+    <li>Certificar-se que ele&nbsp; foi desativado</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que o desenvolvedor seja desativado e que a mensagem     &quot;Developer deactivated sucessfully&quot; seja  exibida,&nbsp; como pode ser visto  na  Evid&ecirc;ncia 09</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="140" name="Caso de Teste 09">
+	<node_order><![CDATA[110]]></node_order>
+	<externalid><![CDATA[45]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade &quot;Manage Developers&quot; no que diz respeito a  capacidade n&atilde;o permitir que um desenvolvedor seja cadastrado sem que todos os campos estejam preenchidos.</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form &quot;Manage Developers&quot;.</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Acessar o menu &quot;Collaborative&quot;.</li>
+    <li>Selecionar a op&ccedil;&atilde;o &quot;Manage Developers&quot;.</li>
+    <li>Inserir &quot;Desenvolvedor 2&quot; no campo &quot;Name&quot;.</li>
+    <li>Clicar no bot&atilde;o &quot;Register&quot;.</li>
+    <li>Verifique a ocorr&ecirc;ncia da mensagem &quot;Fields must be filled&quot;, como pode ser visto na Evid&ecirc;ncia 10.</li>
+    <li>Inserir &quot;Desenvolvedor2&quot; no campo &quot;UserName&quot;.</li>
+    <li>Clicar no bot&atilde;o &quot;Register&quot;.</li>
+    <li>Verifique a ocorr&ecirc;ncia da mensagem &quot;Fields must be filled&quot;, como pode ser visto na Evid&ecirc;ncia 10.</li>
+    <li>Inserir &quot;123456&quot; no campo &quot;Password&quot;.</li>
+    <li>Clicar no bot&atilde;o &quot;Register&quot;.</li>
+    <li>Verifique a ocorr&ecirc;ncia da mensagem &quot;Fields must be filled&quot;, como pode ser visto na Evid&ecirc;ncia 10.</li>
+    <li>Inserir &quot;12345&quot; no campo &quot;Repeat Password&quot;.</li>
+    <li>Clicar no bot&atilde;o &quot;Register&quot;.</li>
+    <li>Verifique a ocorr&ecirc;ncia da mensagem &quot;Fields must be filled&quot;, como pode ser visto na Evid&ecirc;ncia 10.</li>
+    <li>Selecione um projeto em &quot;Project&quot;</li>
+    <li>Clicar no bot&atilde;o &quot;Register&quot;.</li>
+    <li>Verifique a ocorr&ecirc;ncia da mensagem &quot;Fields must be filled&quot;, como pode ser visto na Evid&ecirc;ncia 11.</li>
+</ul>
+<p>&nbsp;</p>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que os passos descritos sejam executados e que as mensagens sejam corretamente exibidas, assim como descritas nos passos cadastrados.</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="143" name="Caso e Teste 10">
+	<node_order><![CDATA[111]]></node_order>
+	<externalid><![CDATA[46]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade &quot;Manage Developers&quot; no que diz respeito a   capacidade n&atilde;o permitir que um desenvolvedor seja cadastrado caso todos os campos estejam preenchidos, mas a repeti&ccedil;&atilde;o da senha &quot;Repeart Password&quot; n&atilde;o confira com a senha informada em &quot;Password&quot;.</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form &quot;Manage Developers&quot;.</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Acessar o menu &quot;Collaborative&quot;.</li>
+    <li>Selecionar a op&ccedil;&atilde;o &quot;Manage Developers&quot;.</li>
+    <li>Preencher todos os campos com dados de um desenvolvedor inexistente (n&atilde;o cadastrado).</li>
+    <li>Selecionar um projeto em &quot;Project&quot;</li>
+    <li>Certificar-se que o campo &quot;Password&quot; foi preenchido com dados diferentes dos dados em &quot;Repeat Password&quot; em apenas um caracter.</li>
+    <li>Clicar no bot&atilde;o &quot;Register&quot;.</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se visualizar a mensagem &quot;Password doesn't match&quot;, como pode ser visto na Evid&ecirc;ncia 12.</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite name="Suíte Teste Funcional - Funcionalidade Message" >
+<node_order><![CDATA[5]]></node_order>
+<details><![CDATA[<p>Su&iacute;te que compreende os casos de teste das funcionalidades referentes a Messages, Vers&atilde;o 2.0 do plugin.</p>]]> 
+</details>
+<testcase internalid="147" name="Caso de Teste 01">
+	<node_order><![CDATA[100]]></node_order>
+	<externalid><![CDATA[47]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade visualiza&ccedil;&atilde;o de mensagens, acess&iacute;vel pelo form &quot;Message View&quot;.</p>
+<p>Este caso de teste visa certificar se o carregamento de todas mensagens est&aacute; sendo feita quando clicado o bot&atilde;o &quot;Refresh&quot;</p>
+<p>&nbsp;</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form 'Message View&quot;.</li>
+    <li>Conhecer a lista de todas as mensagens cadastradas para fins de confer&ecirc;ncia.</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Clique no bot&atilde;o &quot;Utility View&quot;.</li>
+    <li>Selecione a op&ccedil;&atilde;o &quot;Message View&quot;</li>
+    <li>Clique no bot&atilde;o &quot;Refresh&quot;</li>
+</ul>
+<p>&nbsp;</p>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que todas as mensagens cadastradas sejam exibidas, como pode ser visto na Evid&ecirc;ncia 01</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="150" name="Caso de Teste 02">
+	<node_order><![CDATA[101]]></node_order>
+	<externalid><![CDATA[48]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade visualiza&ccedil;&atilde;o de mensagens, acess&iacute;vel pelo form &quot;Message View&quot;.</p>
+<p>Este caso de teste visa certificar se o envio de mensagens est&aacute; funcionando corretamente</p>
+<p>&nbsp;</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form 'Message View&quot;.</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Clique no bot&atilde;o &quot;Utility View&quot;.</li>
+    <li>Selecione a op&ccedil;&atilde;o &quot;Message View&quot;</li>
+    <li>Digite uma nova mensagem no campo &quot;Message&quot;</li>
+    <li>Selecione uma atividade.</li>
+    <li>Clique no bot&atilde;o &quot;Send Message&quot;</li>
+    <li>Certifique-se que a mensagem foi realmente cadastrada, clicando no bot&atilde;o &quot;Refresh&quot;</li>
+</ul>
+<p>&nbsp;</p>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que a mensagem seja cadastrada com sucesso, como pode ser visto na Evid&ecirc;ncia 02</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite name="Suíte Teste Funcional - Funcionalidade Collaboration" >
+<node_order><![CDATA[6]]></node_order>
+<details><![CDATA[<p>Su&iacute;te que compreende os casos de teste das funcionalidades referentes a Collaboration, Vers&atilde;o 2.0 do plugin.</p>]]> 
+</details>
+<testcase internalid="157" name="Caso de Teste 01">
+	<node_order><![CDATA[100]]></node_order>
+	<externalid><![CDATA[50]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade visualiza&ccedil;&atilde;o da colabora&ccedil;&atilde;o, acess&iacute;vel pelo form &quot;Collaboration View&quot;.</p>
+<p>Este caso de teste visa certificar se a visualiza&ccedil;&atilde;o de todas as mensagens colaborativas de usu&aacute;rio (&quot;User Message&quot;) efetuadas para uma dada atividade est&atilde;o sendo caregadas corretamente, quando o bot&atilde;o &quot;Seach&quot; &eacute; clicado.</p>
+<p>&nbsp;</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form 'Collaboration View&quot;.</li>
+    <li>Conhecer a lista de todas as mensagens de usu&aacute;rio cadastradas para fins de confer&ecirc;ncia.</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Clique no bot&atilde;o &quot;Utility View&quot;.</li>
+    <li>Selecione a op&ccedil;&atilde;o &quot;Collaboration View&quot;</li>
+    <li>Selecione &quot;User Messages&quot;</li>
+    <li>Clique no bot&atilde;o &quot;Refresh&quot;</li>
+</ul>
+<p>&nbsp;</p>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que todas as mensagens cadastradas sejam exibidas, como pode ser visto na Evid&ecirc;ncia 01</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="160" name="Caso de Teste 02">
+	<node_order><![CDATA[102]]></node_order>
+	<externalid><![CDATA[51]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade visualiza&ccedil;&atilde;o da colabora&ccedil;&atilde;o, acess&iacute;vel pelo form &quot;Collaboration View&quot;.</p>
+<p>Este caso de teste visa certificar se a visualiza&ccedil;&atilde;o de todas as  mensagens colaborativas de sistema (&quot;System Message&quot;) efetuadas para uma  dada atividade est&atilde;o sendo carregadas corretamente, quando o bot&atilde;o  &quot;Seach&quot; &eacute; clicado</p>
+<p>&nbsp;</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form 'Collaboration View&quot;.</li>
+    <li>Conhecer a lista de todas as mensagens de sistema cadastradas para fins de confer&ecirc;ncia.</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Clique no bot&atilde;o &quot;Utility View&quot;.</li>
+    <li>Selecione a op&ccedil;&atilde;o &quot;Collaboration View&quot;</li>
+    <li>Selecione &quot;System Messages&quot;</li>
+    <li>Clique no bot&atilde;o &quot;Refresh&quot;</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que todas as mensagens cadastradas sejam exibidas, como pode ser visto na Evid&ecirc;ncia 02</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="163" name="Caso de Teste 03">
+	<node_order><![CDATA[103]]></node_order>
+	<externalid><![CDATA[52]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade visualiza&ccedil;&atilde;o da colabora&ccedil;&atilde;o, acess&iacute;vel pelo form &quot;Collaboration View&quot;.</p>
+<p>Este caso de teste visa certificar se a visualiza&ccedil;&atilde;o de todas as  mensagens colaborativas de usu&aacute;rio (&quot;User Message&quot;) efetuadas para uma  dada atividade est&atilde;o sendo caregadas corretamente, de acordo com a utiliza&ccedil;&atilde;o dos filtros,&nbsp; quando o bot&atilde;o  &quot;Seach&quot; &eacute; clicado.</p>
+<p>&nbsp;</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form 'Collaboration View&quot;.</li>
+    <li>Conhecer a lista de todas as mensagens de usu&aacute;rio cadastradas para fins de confer&ecirc;ncia.</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Clique no bot&atilde;o &quot;Utility View&quot;.</li>
+    <li>Selecione a op&ccedil;&atilde;o &quot;Collaboration View&quot;</li>
+    <li>Selecione &quot;User Messages&quot;</li>
+    <li>Em &quot;Filters&quot;, selecione um desenvolvedor em &quot;Developer&quot;.</li>
+    <li>Em &quot;Activity&quot; selecione uma atvidade.</li>
+    <li>Defina um range de datas em &quot;Initial Date&quot; e &quot;Final Date&quot;</li>
+    <li>Clique no bot&atilde;o &quot;Refresh&quot;</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que todas as mensagens cadastradas e que estejam de acordo com os filtros selecionados sejam exibidas, como pode ser visto na Evid&ecirc;ncia 03</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="166" name="Caso de Teste 04">
+	<node_order><![CDATA[104]]></node_order>
+	<externalid><![CDATA[53]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade visualiza&ccedil;&atilde;o da colabora&ccedil;&atilde;o, acess&iacute;vel pelo form &quot;Collaboration View&quot;.</p>
+<p>Este caso de teste visa certificar se a visualiza&ccedil;&atilde;o de todas as  mensagens colaborativas de sistema(System Message&quot;) efetuadas para uma  dada atividade est&atilde;o sendo caregadas corretamente, de acordo com a utiliza&ccedil;&atilde;o dos filtros,&nbsp; quando o bot&atilde;o  &quot;Seach&quot; &eacute; clicado.</p>
+<p>&nbsp;</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form 'Collaboration View&quot;.</li>
+    <li>Conhecer a lista de todas as mensagens de sistema cadastradas para fins de confer&ecirc;ncia.</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Clique no bot&atilde;o &quot;Utility View&quot;.</li>
+    <li>Selecione a op&ccedil;&atilde;o &quot;Collaboration View&quot;</li>
+    <li>Selecione &quot;System Messages&quot;</li>
+    <li>Em &quot;Filters&quot;, selecione um desenvolvedor em &quot;Developer&quot;.</li>
+    <li>Em &quot;Activity&quot; selecione uma atvidade.</li>
+    <li>Defina um range de datas em &quot;Initial Date&quot; e &quot;Final Date&quot;</li>
+    <li>Clique no bot&atilde;o &quot;Refresh&quot;</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que todas as mensagens cadastradas e que estejam de acordo com os filtros selecionados sejam exibidas, como pode ser visto na Evid&ecirc;ncia 04</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="169" name="Caso de Teste 05">
+	<node_order><![CDATA[105]]></node_order>
+	<externalid><![CDATA[54]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade visualiza&ccedil;&atilde;o da colabora&ccedil;&atilde;o, acess&iacute;vel pelo form &quot;Collaboration View&quot;.</p>
+<p>Este caso de teste visa certificar se a visualiza&ccedil;&atilde;o de c&oacute;digo alterado est&aacute; sendo carregada corretamente, quando o &iacute;cone &quot;Source Compare&quot; &eacute; clicado.</p>
+<p>&nbsp;</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao form 'Collaboration View&quot;.</li>
+    <li>Conhecer alguma mensagem de sistema que seja referente a alguma modifica&ccedil;&atilde;o de c&oacute;digo gerada.</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Clique no bot&atilde;o &quot;Utility View&quot;.</li>
+    <li>Selecione a op&ccedil;&atilde;o &quot;Collaboration View&quot;</li>
+    <li>Selecione &quot;System Messages&quot;</li>
+    <li>Selecione uma mensagem que seja referente a alguma modifica&ccedil;&atilde;o de c&oacute;digo gerada.</li>
+    <li>Clique no bot&atilde;o &quot;Refresh&quot;</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se o form &quot;SourceCompare view&quot; seja aberto, mostrando a diferen&ccedil;a entre o c&oacute;digo original e o modificado, como pode ser visto na Evid&ecirc;ncia 05</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite name="Suíte Caso de Teste Funcional - Funcionalidade Paradigms" >
+<node_order><![CDATA[7]]></node_order>
+<details><![CDATA[<p>Su&iacute;te que compreende os casos de teste das funcionalidades de Paradigms, Vers&atilde;o 2.0 do plugin.</p>]]> 
+</details>
+<testcase internalid="173" name="Caso de Teste 01">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[55]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar as funcionalidades de visualiza&ccedil;&atilde;o de informa&ccedil;&otilde;es, contidas na categoria &quot;Paradigms&quot;, acess&iacute;vel pelo form &quot;Paradigms&quot;.</p>
+<p>Este caso de teste visa certificar se a visualiza&ccedil;&atilde;o de todas as propriedades de uma entidade est&atilde;o sendo caregadas corretamente em &quot;Properties View, quando o bot&atilde;o esquedo do mouse &eacute; pressionado sobre uma entidade visual qualquer, na visualiza&ccedil;&atilde;o &quot;TreeMap&quot;.</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter clicado com o bot&atilde;o direito do mouse no projeto atual em &quot;Package Explorer&quot; e em seguida em &quot;Visualize with SourceMiner&quot;.</li>
+    <li>Ter acesso a visualiza&ccedil;&atilde;o &quot;TreeMap&quot;.</li>
+    <li>Ter acesso ao menu Utility Views&quot; e ao form &quot;Properties View&quot;</li>
+    <li>Conhecer todas as propriedades da entidade que ser&aacute; usada no teste para fins de confer&ecirc;ncia.</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Clicar com o bot&atilde;o esquerdo em uma das entidades vis&iacute;veis na visualiza&ccedil;&atilde;o &quot;TreeMap&quot;</li>
+    <li>Visualizar as propriedades em &quot;Property View&quot;</li>
+    <li>Certificar-se que as propriedades visualizadas correspondem a entidade selecionada</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que as propriedades da entidade sejam carregadas em &quot;Properties View&quot;, com pode ser visto na Evid&ecirc;ncia 01</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="176" name="Caso de Teste 02">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[56]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar as funcionalidades de visualiza&ccedil;&atilde;o de informa&ccedil;&otilde;es, contidas na categoria &quot;Paradigms&quot;, acess&iacute;vel pelo form &quot;Paradigms&quot;.</p>
+<p>Este caso de teste visa certificar se o envio de mensagens est&aacute; sendo feito corretamente, quando o bot&atilde;o direito do mouse &eacute; pressionado sobre uma entidade visual qualquer, na visualiza&ccedil;&atilde;o &quot;TreeMap&quot;.</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter clicado com o bot&atilde;o direito do mouse no projeto atual em &quot;Package Explorer&quot; e em seguida em &quot;Visualize with SourceMiner&quot;.</li>
+    <li>Ter acesso a visualiza&ccedil;&atilde;o &quot;TreeMap&quot;.</li>
+    <li>Ter acesso ao menu &quot;Utility Views&quot; e ao form &quot;Properties View&quot;</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Clicar com o bot&atilde;o direito em uma das entidades vis&iacute;veis na visualiza&ccedil;&atilde;o &quot;TreeMap&quot;</li>
+    <li>Digitar uma mensagem na janela que foi aberta.</li>
+    <li>Certificar-se que a mensagem foi corretamente armazenada, visualizando-a em &quot;Collaboration View&quot;, no menu &quot;Utility View&quot;</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que o form para envio de mensagens seja acionado e a mensagem seja cadastrada corretamente, com pode ser visto na Evid&ecirc;ncia 02 e na Evid&ecirc;ncia 03</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="182" name="Caso de Teste 03">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[58]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar as funcionalidades de visualiza&ccedil;&atilde;o de informa&ccedil;&otilde;es, contidas na categoria &quot;Paradigms&quot;, acess&iacute;vel pelo form &quot;Paradigms&quot;.</p>
+<p>Este caso de teste visa certificar se a visualiza&ccedil;&atilde;o de todas as propriedades de uma entidade est&atilde;o sendo caregadas corretamente em &quot;Properties View&quot;, quando o bot&atilde;o esquedo do mouse &eacute; pressionado sobre uma entidade visual qualquer, na visualiza&ccedil;&atilde;o &quot;Polymetric&quot;.</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter clicado com o bot&atilde;o direito do mouse no projeto atual em &quot;Package Explorer&quot; e em seguida em &quot;Visualize with SourceMiner&quot;.</li>
+    <li>Ter acesso a visualiza&ccedil;&atilde;o &quot;Polymetric&quot;.</li>
+    <li>Ter acesso ao menu Utility Views&quot; e ao form &quot;Properties View&quot;</li>
+    <li>Conhecer todas as propriedades da entidade que ser&aacute; usada no teste para fins de confer&ecirc;ncia.</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Clicar com o bot&atilde;o esquerdo em uma das entidades vis&iacute;veis na visualiza&ccedil;&atilde;o &quot;TreeMap&quot;</li>
+    <li>Visualizar as propriedades em &quot;Property View&quot;</li>
+    <li>Certificar-se que as propriedades visualizadas correspondem a entidade selecionada</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que as propriedades da entidade sejam carregadas em &quot;Properties View&quot;, com pode ser visto na Evid&ecirc;ncia 04</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="185" name="Caso de Teste 04">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[59]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar as funcionalidades de visualiza&ccedil;&atilde;o de informa&ccedil;&otilde;es, contidas na categoria &quot;Paradigms&quot;, acess&iacute;vel pelo form &quot;Paradigms&quot;.</p>
+<p>Este caso de teste visa certificar se o envio de mensagens est&aacute; sendo feito corretamente, quando o bot&atilde;o direito do mouse &eacute; pressionado sobre uma entidade visual qualquer, na visualiza&ccedil;&atilde;o &quot;Polymetric&quot;.</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter clicado com o bot&atilde;o direito do mouse no projeto atual em &quot;Package Explorer&quot; e em seguida em &quot;Visualize with SourceMiner&quot;.</li>
+    <li>Ter acesso a visualiza&ccedil;&atilde;o &quot;Polymetric&quot;.</li>
+    <li>Ter acesso ao menu &quot;Utility Views&quot; e ao form &quot;Properties View&quot;</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Clicar com o bot&atilde;o direito em uma das entidades vis&iacute;veis na visualiza&ccedil;&atilde;o &quot;Polymetric&quot;</li>
+    <li>Digitar uma mensagem na janela que foi aberta.</li>
+    <li>Certificar-se que a mensagem foi corretamente armazenada, visualizando-a em &quot;Collaboration View&quot;, no menu &quot;Utility View&quot;</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que o form para envio de mensagens seja acionado e a mensagem seja cadastrada corretamente, com pode ser visto na Evid&ecirc;ncia 05 e na Evid&ecirc;ncia 06</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="188" name="Caso de Teste 05">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[60]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar as funcionalidades de visualiza&ccedil;&atilde;o de informa&ccedil;&otilde;es, contidas na categoria &quot;Paradigms&quot;, acess&iacute;vel pelo form &quot;Paradigms&quot;.</p>
+<p>Este caso de teste visa certificar se a visualiza&ccedil;&atilde;o de todas as propriedades de uma entidade est&atilde;o sendo caregadas corretamente em &quot;Properties View, quando o bot&atilde;o esquedo do mouse &eacute; pressionado sobre uma entidade visual qualquer, na visualiza&ccedil;&atilde;o &quot;Matrix&quot;.</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter clicado com o bot&atilde;o direito do mouse no projeto atual em &quot;Package Explorer&quot; e em seguida em &quot;Visualize with SourceMiner&quot;.</li>
+    <li>Ter acesso a visualiza&ccedil;&atilde;o &quot;Matrix&quot;.</li>
+    <li>Ter acesso ao menu &quot;Utility Views&quot; e ao form &quot;Properties View&quot;</li>
+    <li>Conhecer todas as propriedades da entidade que ser&aacute; usada no teste para fins de confer&ecirc;ncia.</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Clicar com o bot&atilde;o esquerdo em uma das entidades vis&iacute;veis na visualiza&ccedil;&atilde;o &quot;Matrix&quot;</li>
+    <li>Visualizar as propriedades em &quot;Property View&quot;</li>
+    <li>Certificar-se que as propriedades visualizadas correspondem a entidade selecionada</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que as propriedades da entidade sejam carregadas em &quot;Properties View&quot;, com pode ser visto na Evid&ecirc;ncia 07</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="191" name="Caso de Teste 06">
+	<node_order><![CDATA[5]]></node_order>
+	<externalid><![CDATA[61]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar as funcionalidades de visualiza&ccedil;&atilde;o de informa&ccedil;&otilde;es, contidas na categoria &quot;Paradigms&quot;, acess&iacute;vel pelo form &quot;Paradigms&quot;.</p>
+<p>Este caso de teste visa certificar se o envio de mensagens est&aacute; sendo feito corretamente, quando o bot&atilde;o direito do mouse &eacute; pressionado sobre uma entidade visual qualquer, na visualiza&ccedil;&atilde;o &quot;Matrix&quot;.</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter clicado com obot&atilde;o direito do mouse no projeto atual em &quot;Package Explorer&quot; e em seguida em &quot;Visualize with SourceMiner&quot;.</li>
+    <li>Ter acesso a visualiza&ccedil;&atilde;o &quot;Matrix&quot;.</li>
+    <li>Ter acesso ao menu &quot;Utility Views&quot; e ao form &quot;Properties View&quot;</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Clicar com o bot&atilde;o direito em uma das entidades vis&iacute;veis na visualiza&ccedil;&atilde;o &quot;Matrix&quot;</li>
+    <li>Digitar uma mensagem na janela que foi aberta.</li>
+    <li>Certificar-se que a mensagem foi corretamente armazenada, visualizando-a em &quot;Collaboration View&quot;, no menu &quot;Utility View&quot;</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que o form para envio de mensagens seja acionado e a mensagem seja cadastrada corretamente, com pode ser visto na Evid&ecirc;ncia 08 e na Evid&ecirc;ncia 09</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="194" name="Caso de Teste 07">
+	<node_order><![CDATA[6]]></node_order>
+	<externalid><![CDATA[62]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar as funcionalidades de visualiza&ccedil;&atilde;o de informa&ccedil;&otilde;es, contidas na categoria &quot;Paradigms&quot;, acess&iacute;vel pelo form &quot;Paradigms&quot;.</p>
+<p>Este caso de teste visa certificar se a visualiza&ccedil;&atilde;o de todas as propriedades de uma entidade est&atilde;o sendo caregadas corretamente em &quot;Properties View, quando o bot&atilde;o esquedo do mouse &eacute; pressionado sobre uma entidade visual qualquer, na visualiza&ccedil;&atilde;o &quot;Grid&quot;.</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter clicado com o bot&atilde;o direito do mouse no projeto atual em &quot;Package Explorer&quot; e em seguida em &quot;Visualize with SourceMiner&quot;.</li>
+    <li>Ter acesso a visualiza&ccedil;&atilde;o &quot;Grid&quot;.</li>
+    <li>Ter acesso ao menu &quot;Utility Views&quot; e ao form &quot;Properties View&quot;</li>
+    <li>Conhecer todas as propriedades da entidade que ser&aacute; usada no teste para fins de confer&ecirc;ncia.</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Clicar com o bot&atilde;o esquerdo em uma das entidades vis&iacute;veis na visualiza&ccedil;&atilde;o &quot;Grid&quot;</li>
+    <li>Visualizar as propriedades em &quot;Property View&quot;</li>
+    <li>Certificar-se que as propriedades visualizadas correspondem a entidade selecionada</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que as propriedades da entidade sejam carregadas em &quot;Properties View&quot;, com pode ser visto na Evid&ecirc;ncia 10</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="197" name="Caso de Teste 08">
+	<node_order><![CDATA[7]]></node_order>
+	<externalid><![CDATA[63]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar as funcionalidades de visualiza&ccedil;&atilde;o de informa&ccedil;&otilde;es, contidas na categoria &quot;Paradigms&quot;, acess&iacute;vel pelo form &quot;Paradigms&quot;.</p>
+<p>Este caso de teste visa certificar se o envio de mensagens est&aacute; sendo feito corretamente, quando o bot&atilde;o direito do mouse &eacute; pressionado sobre uma entidade visual qualquer, na visualiza&ccedil;&atilde;o &quot;Grid&quot;.</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter clicado com obot&atilde;o direito do mouse no projeto atual em &quot;Package Explorer&quot; e em seguida em &quot;Visualize with SourceMiner&quot;.</li>
+    <li>Ter acesso a visualiza&ccedil;&atilde;o &quot;Grid&quot;.</li>
+    <li>Ter acesso ao menu &quot;Utility Views&quot; e ao form &quot;Properties View&quot;</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Clicar com o bot&atilde;o direito em uma das entidades vis&iacute;veis na visualiza&ccedil;&atilde;o &quot;Grid&quot;</li>
+    <li>Digitar uma mensagem na janela que foi aberta.</li>
+    <li>Certificar-se que a mensagem foi corretamente armazenada, visualizando-a em &quot;Collaboration View&quot;, no menu &quot;Utility View&quot;</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que o form para envio de mensagens seja acionado e a mensagem seja cadastrada corretamente, com pode ser visto na Evid&ecirc;ncia 11 e na Evid&ecirc;ncia 12</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="200" name="Caso de Teste 09">
+	<node_order><![CDATA[8]]></node_order>
+	<externalid><![CDATA[64]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar as funcionalidades de visualiza&ccedil;&atilde;o de informa&ccedil;&otilde;es, contidas na categoria &quot;Paradigms&quot;, acess&iacute;vel pelo form &quot;Paradigms&quot;.</p>
+<p>Este caso de teste visa certificar se a visualiza&ccedil;&atilde;o de todas as propriedades de uma entidade est&atilde;o sendo caregadas corretamente em &quot;Properties View, quando o bot&atilde;oesquedo do mouse &eacute; pressionado sobre uma entidade visual qualquer, na visualiza&ccedil;&atilde;o &quot;Graph&quot;.</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter clicado com obot&atilde;o direito do mouse no projeto atual em &quot;Package Explorer&quot; e em seguida em &quot;Visualize with SourceMiner&quot;.</li>
+    <li>Ter acesso a visualiza&ccedil;&atilde;o &quot;Graph&quot;.</li>
+    <li>Ter acesso ao menu &quot;Utility Views&quot; e ao form &quot;Properties View&quot;</li>
+    <li>Conhecer todas as propriedades da entidade que ser&aacute; usada no teste para fins de confer&ecirc;ncia.</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Clicar com o bot&atilde;o esquerdo em uma das entidades vis&iacute;veis na visualiza&ccedil;&atilde;o &quot;Graph&quot;</li>
+    <li>Visualizar as propriedades em &quot;Property View&quot;</li>
+    <li>Certificar-se que as propriedades visualizadas correspondem a entidade selecionada</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que as propriedades da entidade sejam carregadas em &quot;Properties View&quot;, com pode ser visto na Evid&ecirc;ncia 13</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="203" name="Caso de Teste 10">
+	<node_order><![CDATA[9]]></node_order>
+	<externalid><![CDATA[65]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar as funcionalidades de visualiza&ccedil;&atilde;o de informa&ccedil;&otilde;es, contidas na categoria &quot;Paradigms&quot;, acess&iacute;vel pelo form &quot;Paradigms&quot;.</p>
+<p>Este caso de teste visa certificar se o envio de mensagens est&aacute; sendo feito corretamente, quando o bot&atilde;o direito do mouse &eacute; pressionado sobre uma entidade visual qualquer, na visualiza&ccedil;&atilde;o &quot;Graph&quot;.</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter clicado com obot&atilde;o direito do mouse no projeto atual em &quot;Package Explorer&quot; e em seguida em &quot;Visualize with SourceMiner&quot;.</li>
+    <li>Ter acesso a visualiza&ccedil;&atilde;o &quot;Graph&quot;.</li>
+    <li>Ter acesso ao menu &quot;Utility Views&quot; e ao form &quot;Properties View&quot;</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Clicar com o bot&atilde;o direito em uma das entidades vis&iacute;veis na visualiza&ccedil;&atilde;o &quot;Graph&quot;</li>
+    <li>Digitar uma mensagem na janela que foi aberta.</li>
+    <li>Certificar-se que a mensagem foi corretamente armazenada, visualizando-a em &quot;Collaboration View&quot;, no menu &quot;Utility View&quot;</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que o form para envio de mensagens seja acionado e a mensagem seja cadastrada corretamente, com pode ser visto na Evid&ecirc;ncia 14 e na Evid&ecirc;ncia 15</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="209" name="Caso de Teste 11">
+	<node_order><![CDATA[10]]></node_order>
+	<externalid><![CDATA[67]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar as funcionalidades de visualiza&ccedil;&atilde;o de informa&ccedil;&otilde;es, contidas na categoria &quot;Paradigms&quot;, acess&iacute;vel pelo form &quot;Paradigms&quot;.</p>
+<p>Este caso de teste visa certificar se as informa&ccedil;&otilde;es Acomplamento&nbsp; (Coupling Options) est&atilde;o sendo exibidas corretamente, quando o bot&atilde;o esquerdo do mouse &eacute; pressionado sobre o bot&atilde;o &quot;Coupling Options&quot;, na visualiza&ccedil;&atilde;o &quot;Graph&quot; e as informa&ccedil;&otilde;es s&atilde;o carregadas, atrav&eacute;s do bot&atilde;o esquerdo do mouse no bot&atilde;o &quot;Show Dependency&quot;</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter clicado com o bot&atilde;o direito do mouse no projeto atual em &quot;Package Explorer&quot; e em seguida em &quot;Visualize with SourceMiner&quot;.</li>
+    <li>Ter acesso a visualiza&ccedil;&atilde;o &quot;Graph&quot;.</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Clicar com o bot&atilde;o esquerdo em &quot;Show Dependency&quot; na visualiza&ccedil;&atilde;o &quot;Graph&quot;</li>
+    <li>Clicar em &quot;Coupling Options&quot; e selecionar uma op&ccedil;&atilde;o de cada vez, entre as dispon&iacute;veis.</li>
+    <li>A cada op&ccedil;&atilde;o selecionada, clicar em &quot;Show Dependency&quot;</li>
+    <li>Verificar se altera&ccedil;&otilde;es s&atilde;o realizadas sobre as entidades dispon&iacute;veis enquanto cada uma das op&ccedil;&otilde;es em &quot;Coupling Options&quot; &eacute; selecionada.</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que a a visualiza&ccedil;&atilde;o das entidades em &quot;Graph&quot; sejam impactadas ao alterar as op&ccedil;&otilde;es selecionadas em &quot;Coupling Options&quot; e o acionamento em conjunto do bot&atilde;o &quot;Show Dependency&quot;, com pode ser visto na Evid&ecirc;ncia 16&nbsp; e na Evid&ecirc;ncia 17</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite name="Suíte de Teste Funcional - Funcionalidade Concerns Filter" >
+<node_order><![CDATA[8]]></node_order>
+<details><![CDATA[<p>Su&iacute;te que compreende os casos de teste da funcionalidade &quot;Concern Filter&quot;, Vers&atilde;o 2.0 do plugin.</p>]]> 
+</details>
+<testcase internalid="213" name="Caso de Teste 01">
+	<node_order><![CDATA[100]]></node_order>
+	<externalid><![CDATA[68]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade &quot;Concerns Filter&quot;, acess&iacute;vel atrav&eacute;s do menu &quot;Filter Views&quot;.</p>
+<p>Espera-se ser capaz de selecionar cada uma das prefer&ecirc;ncias em &quot;Concerns Filter&quot; e execut&aacute;-las sobre a visualiza&ccedil;&atilde;o &quot;TreeMap&quot;.</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao menu &quot;Filter Views&quot;.</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Clicar na op&ccedil;&atilde;o &quot;Concerns Filter&quot;.</li>
+    <li>Selecionar o primeiro filtro &quot;Concerns&quot; dispon&iacute;vel, escolhendo uma cor desejada para que as entidades correspondentes sejam coloridas com ela.</li>
+    <li>Clica-se no bot&atilde;o &quot;Play&quot;.</li>
+    <li>Clica-se no bot&atilde;o &quot;Colors&quot;.</li>
+    <li>Escolhe-se a op&ccedil;&atilde;o &quot;Color Concerns&quot;.</li>
+    <li>Execute a visualiza&ccedil;&atilde;o &quot;TreeMap&quot; e visualize as entidades que foram afetadas pela cor selecionada.</li>
+    <li>Repita cada um dos passos para os demais filtros &quot;Concerns&quot;, escolhendo novas cores para cada uma delas.</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que a visualiza&ccedil;&atilde;o &quot;TreeMap&quot; seja afetada por cada um dos filtros, como pode ser visto na Evid&ecirc;ncia 01 e na Evid&ecirc;ncia 02</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="216" name="Caso de Teste 02">
+	<node_order><![CDATA[101]]></node_order>
+	<externalid><![CDATA[69]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade &quot;Concerns Filter&quot;, acess&iacute;vel atrav&eacute;s do menu &quot;Filter Views&quot;.</p>
+<p>Espera-se ser capaz de selecionar cada uma das prefer&ecirc;ncias em &quot;Concerns Filter&quot; e execut&aacute;-las sobre a visualiza&ccedil;&atilde;o &quot;Polymetric&quot;.</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao menu &quot;Filter Views&quot;.</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Clicar na op&ccedil;&atilde;o &quot;Concerns Filter&quot;.</li>
+    <li>Selecionar o primeiro filtro &quot;Concerns&quot; dispon&iacute;vel, escolhendo uma cor desejada para que as entidades correspondentes sejam coloridas com ela.</li>
+    <li>Clica-se no bot&atilde;o &quot;Play&quot;.</li>
+    <li>Clica-se no bot&atilde;o &quot;Colors&quot;.</li>
+    <li>Escolhe-se a op&ccedil;&atilde;o &quot;Color Concerns&quot;.</li>
+    <li>Execute a visualiza&ccedil;&atilde;o &quot;Polymetric&quot; e visualize as entidades que foram afetadas pela cor selecionada.</li>
+    <li>Repita cada um dos passos para os demais filtros &quot;Concerns&quot;, escolhendo novas cores para cada uma delas.</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que a visualiza&ccedil;&atilde;o &quot;Polymetric&quot; seja afetada por cada um dos filtros, como pode ser visto na Evid&ecirc;ncia 03 e na Evid&ecirc;ncia 04</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="219" name="Caso de Teste 03">
+	<node_order><![CDATA[102]]></node_order>
+	<externalid><![CDATA[70]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade &quot;Concerns Filter&quot;, acess&iacute;vel atrav&eacute;s do menu &quot;Filter Views&quot;.</p>
+<p>Espera-se ser capaz de selecionar cada uma das prefer&ecirc;ncias em &quot;Concerns Filter&quot; e execut&aacute;-las sobre a visualiza&ccedil;&atilde;o &quot;Matrix&quot;.</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao menu &quot;Filter Views&quot;.</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Clicar na op&ccedil;&atilde;o &quot;Concerns Filter&quot;.</li>
+    <li>Selecionar o primeiro filtro &quot;Concerns&quot; dispon&iacute;vel, escolhendo uma cor desejada para que as entidades correspondentes sejam coloridas com ela.</li>
+    <li>Clica-se no bot&atilde;o &quot;Play&quot;.</li>
+    <li>Clica-se no bot&atilde;o &quot;Colors&quot;.</li>
+    <li>Escolhe-se a op&ccedil;&atilde;o &quot;Color Concerns&quot;.</li>
+    <li>Execute a visualiza&ccedil;&atilde;o &quot;Matrix&quot; e visualize as entidades que foram afetadas pela cor selecionada.</li>
+    <li>Repita cada um dos passos para os demais filtros &quot;Concerns&quot;, escolhendo novas cores para cada uma delas.</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que a visualiza&ccedil;&atilde;o &quot;Matrix&quot; seja afetada por cada um dos filtros, como pode ser visto na Evid&ecirc;ncia 05 e na Evid&ecirc;ncia 06</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="222" name="Caso de Teste 04">
+	<node_order><![CDATA[103]]></node_order>
+	<externalid><![CDATA[71]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade &quot;Concerns Filter&quot;, acess&iacute;vel atrav&eacute;s do menu &quot;Filter Views&quot;.</p>
+<p>Espera-se ser capaz de selecionar cada uma das prefer&ecirc;ncias em &quot;Concerns Filter&quot; e execut&aacute;-las sobre a visualiza&ccedil;&atilde;o &quot;Grid&quot;.</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao menu &quot;Filter Views&quot;.</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Clicar na op&ccedil;&atilde;o &quot;Concerns Filter&quot;.</li>
+    <li>Selecionar o primeiro filtro &quot;Concerns&quot; dispon&iacute;vel, escolhendo uma cor desejada para que as entidades correspondentes sejam coloridas com ela.</li>
+    <li>Clica-se no bot&atilde;o &quot;Play&quot;.</li>
+    <li>Clica-se no bot&atilde;o &quot;Colors&quot;.</li>
+    <li>Escolhe-se a op&ccedil;&atilde;o &quot;Color Concerns&quot;.</li>
+    <li>Execute a visualiza&ccedil;&atilde;o &quot;Matrix&quot; e visualize as entidades que foram afetadas pela cor selecionada.</li>
+    <li>Repita cada um dos passos para os demais filtros &quot;Concerns&quot;, escolhendo novas cores para cada uma delas.</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que a visualiza&ccedil;&atilde;o &quot;Matrix&quot; seja afetada por cada um dos filtros, como pode ser visto na Evid&ecirc;ncia 07 e na Evid&ecirc;ncia 08</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="225" name=" Caso de Teste 05">
+	<node_order><![CDATA[104]]></node_order>
+	<externalid><![CDATA[72]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testar a funcionalidade &quot;Concerns Filter&quot;, acess&iacute;vel atrav&eacute;s do menu &quot;Filter Views&quot;.</p>
+<p>Espera-se ser capaz de selecionar cada uma das prefer&ecirc;ncias em &quot;Concerns Filter&quot; e execut&aacute;-las sobre a visualiza&ccedil;&atilde;o &quot;Graph&quot;.</p>]]></summary>
+	<preconditions><![CDATA[<ul>
+    <li>Ter acesso ao menu &quot;Filter Views&quot;.</li>
+</ul>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+    <li>Clicar na op&ccedil;&atilde;o &quot;Concerns Filter&quot;.</li>
+    <li>Selecionar o primeiro filtro &quot;Concerns&quot; dispon&iacute;vel, escolhendo uma cor desejada para que as entidades correspondentes sejam coloridas com ela.</li>
+    <li>Clica-se no bot&atilde;o &quot;Play&quot;.</li>
+    <li>Clica-se no bot&atilde;o &quot;Colors&quot;.</li>
+    <li>Escolhe-se a op&ccedil;&atilde;o &quot;Color Concerns&quot;.</li>
+    <li>Execute a visualiza&ccedil;&atilde;o &quot;Graph&quot; e visualize as entidades que foram afetadas pela cor selecionada.</li>
+    <li>Repita cada um dos passos para os demais filtros &quot;Concerns&quot;, escolhendo novas cores para cada uma delas.</li>
+</ul>]]></actions>
+	<expectedresults><![CDATA[<p>Espera-se que a visualiza&ccedil;&atilde;o &quot;Graph&quot; seja afetada por cada um dos filtros, como pode ser visto na Evid&ecirc;ncia 09 e na Evid&ecirc;ncia 10</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite></testsuite>

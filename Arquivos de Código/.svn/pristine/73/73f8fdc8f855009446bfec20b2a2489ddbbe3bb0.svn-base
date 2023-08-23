@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            label="GiveMe Views"
+            visible="true"
+            id="givemeviews.actionRequests">
+         <menu
+               label="GiveMe &amp;Views"
+               id="givemeviews.requests">
+            <separator
+                  name="sampleGroup">
+            </separator>
+         </menu>
+      </actionSet>
+      <actionSet
+            id="givemeviews.recursionAnalysis"
+            label="Recursion Analysis"
+            visible="true">
+         <menu
+               id="givemeviews.recursionAnalysis"
+               label="Recursion &amp;Analysis">
+            <separator
+                  name="sampleGroup">
+            </separator>
+         </menu>
+         <action
+               class="givemeviews.actions.RecursionAnalysisAction"
+               icon="icons/radialview.ico"
+               id="givemeviews.actions.RecursionAnalysisAction"
+               label="&amp;Radial View"
+               menubarPath="sampleMenu/sampleGroup"
+               toolbarPath="sampleGroup"
+               tooltip="Recursion Analysis">
+         </action>
+      </actionSet>
+   </extension>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            id="givemeviews"
+            objectClass="org.eclipse.core.resources.IProject">
+         <action
+               class="givemeviews.popup.actions.VisualizerAction"
+               enablesFor="1"
+               icon="icons/gmvicone.gif"
+               id="givemeviews.core.popups.VisualizerAction"
+               label="Visualizer with GiveMeViews"
+               menubarPath="additions"
+               tooltip="Visualize the selected project with GiveMe Views.">
+         </action>
+      </objectContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            id="givemeviews.givemeviewcategory"
+            name="GimeMe Views">
+      </category>
+      <view
+            class="givemeviews.views.vpMetricView"
+            icon="icons/metricview.ico"
+            id="givemeviews.views.MetricView"
+            name="Metrics">
+      </view>
+      <view
+            class="givemeviews.views.vpModulesComponentsView"
+            icon="icons/modulescomponents.ico"
+            id="givemeviews.views.vpModulesComponents"
+            name="Modules and Components">
+      </view>
+      <view
+            class="givemeviews.views.vpOutputView"
+            icon="icons/export.ico"
+            id="givemeviews.views.vpOutputView"
+            name="Output View">
+      </view>
+      <view
+            class="givemeviews.views.vpGiveMeViewsMain"
+            icon="icons/gmvicone.gif"
+            id="givemeviews.views.vpGiveMeViewsMain"
+            name="GiveMe Views">
+      </view>
+      <view
+            class="givemeviews.views.vpTreeView"
+            icon="icons/treeview.ico"
+            id="givemeviews.views.vpTreeView"
+            name="Tree View">
+      </view>
+      <view
+            class="givemeviews.views.vpFilterView"
+            icon="icons/filterview.ico"
+            id="givemeviews.views.vpFilterView"
+            name="Filter View">
+      </view>
+   </extension>
+   
+   
+
+</plugin>

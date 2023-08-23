@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="comparisonview.views.vpComparisonView"
+            icon="src/comparisonview/compare.png"
+            id="comparisonview.views.vpComparisonView"
+            name="Comparison View">
+      </view>
+   </extension>
+
+
+</plugin>

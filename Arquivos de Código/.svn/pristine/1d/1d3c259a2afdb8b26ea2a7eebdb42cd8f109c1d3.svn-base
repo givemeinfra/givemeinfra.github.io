@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SourceMiner
+Bundle-SymbolicName: org.sourceminer.sourceminer;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: sourceminer.SourceMiner
+Bundle-Vendor: R. Magnavita, G. Carneiro and M. Mendonça
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.jdt.core,
+ org.eclipse.jface.text,
+ org.eclipse.core.resources,
+ org.eclipse.jdt.ui,
+ org.eclipse.ui.views.properties.tabbed,
+ org.sourceminer.aimv;bundle-version="1.0.0"
+Eclipse-LazyStart: true
+Bundle-ClassPath: .,
+ lib/incBoardAPI2.jar
+Bundle-ActivationPolicy: lazy
+Export-Package: sourceminer
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7

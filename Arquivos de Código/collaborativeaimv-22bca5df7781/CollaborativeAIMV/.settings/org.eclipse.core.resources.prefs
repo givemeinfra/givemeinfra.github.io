@@ -1,0 +1,10 @@
+#Fri Jul 26 00:38:10 BRT 2013
+eclipse.preferences.version=1
+encoding//src/com/br/service/facade/ServiceFacade.java=UTF-8
+encoding//src/com/br/service/facade/ServiceFacadeService.java=UTF-8
+encoding//src/com/br/service/facade/ServiceFacadeServiceLocator.java=UTF-8
+encoding//src/com/br/service/facade/ServiceFacadeSoapBindingStub.java=UTF-8
+encoding//src/com/br/service/valueObject/ActivityVO.java=UTF-8
+encoding//src/com/br/service/valueObject/DeveloperVO.java=UTF-8
+encoding//src/com/br/service/valueObject/MessageVO.java=UTF-8
+encoding//src/com/br/service/valueObject/ProjectVO.java=UTF-8

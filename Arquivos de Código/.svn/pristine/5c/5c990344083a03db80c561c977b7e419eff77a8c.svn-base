@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Tool Color
+Bundle-SymbolicName: org.sourceminer.tools.toolcolor;singleton:=true
+Bundle-Version: 1.0.0
+Require-Bundle: org.eclipse.ui,
+ org.sourceminer.aimv;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7

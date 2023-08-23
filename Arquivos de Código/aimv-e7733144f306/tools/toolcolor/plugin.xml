@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            id="tools.actionset.colors"
+            label="ActionSet"
+            visible="true">
+         <action
+               class="tools.actions.ColorsToolAction"
+               icon="icons/colorMode.png"
+               id="tools.actions.colorstool"
+               label="Colors"
+               style="pulldown"
+               toolbarPath="Normal">
+         </action>
+      </actionSet>
+   </extension>
+   <extension
+         point="aimv.tools">
+      <tool
+            class="tools.ColorsTool"
+            id="tools.colorstool"
+            name="Colors Tool">
+      </tool>
+   </extension>
+
+</plugin>

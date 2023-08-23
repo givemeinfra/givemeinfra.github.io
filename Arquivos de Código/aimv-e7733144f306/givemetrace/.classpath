@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="lib" path="javaparser1.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="jdom-2.0.5.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="lib" path="antlr-runtime-3.4.jar"/>
+	<classpathentry kind="lib" path="org.eclipse.jgit-3.4.1.201406201815-r-javadoc.jar"/>
+	<classpathentry kind="lib" path="org.eclipse.jgit-3.4.1.201406201815-r.jar"/>
+	<classpathentry kind="lib" path="sequence-library-1.0.3.jar"/>
+	<classpathentry kind="lib" path="sqljet-1.1.10.jar"/>
+	<classpathentry kind="lib" path="svnkit-1.8.6.jar"/>
+	<classpathentry kind="lib" path="svnkit-cli-1.8.6.jar"/>
+	<classpathentry kind="lib" path="svnkit-javahl16-1.8.6.jar"/>
+	<classpathentry kind="lib" path="javaparser.v1.8mod.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

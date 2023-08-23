@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            allowMultiple="false"
+            class="views.properties.PropertiesView"
+            icon="icons/property_view.png"
+            id="aimv.views.propertiesview"
+            name="Properties View">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            categoryId="views.properties.category"
+            defaultHandler="views.properties.handlers.ZoomInHandler"
+            id="views.properties.zoomin.command"
+            name="Zoom In">
+      </command>
+      <command
+            categoryId="views.properties.category"
+            defaultHandler="views.properties.handlers.ZoomOutHandler"
+            id="views.properties.zoomout.command"
+            name="Zoom Out">
+      </command>
+      <command
+            categoryId="views.properties.category"
+            defaultHandler="views.properties.handlers.SelectionPropertiesHandler"
+            id="views.properties.selectionproperties.command"
+            name="Selection Properties">
+      </command>
+      <category
+            description="Commands Properties View"
+            id="views.properties.category"
+            name="Views Properties Category">
+      </category>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="toolbar:aimv.views.propertiesview">
+         <command
+               commandId="views.properties.zoomin.command"
+               icon="icons/zoom_in.png"
+               id="views.properties.zoomin.toolbar.command"
+               label="Zoom In"
+               style="push"
+               tooltip="Zoom In">
+         </command>
+         <command
+               commandId="views.properties.zoomout.command"
+               icon="icons/zoom_out.png"
+               id="views.properties.zoomout.toolbar.command"
+               label="Zoom Out"
+               style="push"
+               tooltip="Zoom Out">
+         </command>
+         <command
+               commandId="views.properties.selectionproperties.command"
+               icon="icons/filter_view.png"
+               id="views.properties.selectionproperties.toolbar.command"
+               label="Selection Properties"
+               style="push"
+               tooltip="Selection Properties">
+         </command>
+      </menuContribution>
+   </extension>
+
+
+</plugin>

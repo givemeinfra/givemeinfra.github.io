@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Properties
+Bundle-SymbolicName: org.sourceminer.views.properties;singleton:=true
+Bundle-Version: 1.0.1
+Require-Bundle: org.eclipse.ui.views.properties.tabbed,
+ org.eclipse.core.runtime,
+ org.sourceminer.aimv;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            allowMultiple="false"
+            class="views.polymetric.Polymetric"
+            fastViewWidthRatio="0.95"
+            icon="icons/polymetric.gif"
+            id="aimv.paradigms.polymetric"
+            name="Polymetric">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.viewActions">
+      <viewContribution
+            id="aimv.polymetric.helpcontribution"
+            targetID="aimv.paradigms.polymetric">
+         <action
+               class="views.polymetric.actions.RelationAction"
+               icon="icons/polymetric.gif"
+               id="aimv.polymetric.actions.relation"
+               label=" Relation"
+               style="pulldown"
+               toolbarPath="Normal/polymetric.group.relation"
+               tooltip="Relation">
+         </action>
+         <action
+               class="views.polymetric.actions.SizeMetricsAction"
+               icon="icons/size_both.png"
+               id="aimv.polymetric.actions.sizeMetrics"
+               label="Metrics"
+               style="pulldown"
+               toolbarPath="Normal/polymetric.group.help"
+               tooltip="Metrics">
+         </action>
+      </viewContribution>
+   </extension>
+
+</plugin>

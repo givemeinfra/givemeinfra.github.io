@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            allowMultiple="false"
+            class="views.graph.GraphView"
+            fastViewWidthRatio="0.95"
+            icon="icons/couplingView.gif"
+            id="aimv.paradigms.graph"
+            name="Graph">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.viewActions">
+      <viewContribution
+            id="sourceminer.graphcontribution"
+            targetID="aimv.paradigms.graph">
+         <action
+               class="views.graph.actions.ShowDependencyAction"
+               icon="icons/showdependency.gif"
+               id="sourceminer.actions.graphshowdependencytool"
+               label="Show Dependency"
+               state="false"
+               style="toggle"
+               toolbarPath="Normal">
+         </action>
+         <action
+               class="views.graph.actions.CouplingOptionsAction"
+               icon="icons/couplingoptions.gif"
+               id="sourceminer.actions.graphcouplingoptions"
+               label="Coupling Options"
+               style="pulldown"
+               toolbarPath="Normal">
+         </action>
+      </viewContribution>
+   </extension>
+
+
+</plugin>

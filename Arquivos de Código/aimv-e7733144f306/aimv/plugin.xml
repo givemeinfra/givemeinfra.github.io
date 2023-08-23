@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="aimv.filters" name="filters" schema="schema/aimv.filters.exsd"/>
+   <extension-point id="aimv.modules" name="modules" schema="schema/aimv.modules.exsd"/>
+   <extension-point id="aimv.tools" name="tools" schema="schema/aimv.tools.exsd"/>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="toolbar:org.eclipse.ui.main.toolbar">
+         <toolbar
+               id="toolbar:aimv.toolbar"
+               label="AIMV">
+            <command
+                  commandId="aimv.dataviews.command"
+                  icon="icons/dataviews.png"
+                  id="aimv.dataviews.toolbar.command"
+                  label="Data Views"
+                  style="push"
+                  tooltip="Data Views">
+            </command>
+            <command
+                  commandId="aimv.filterviews.command"
+                  icon="icons/filterviews.png"
+                  id="aimv.filterviews.toolbar.command"
+                  label="Filter Views"
+                  style="push"
+                  tooltip="Filter Views">
+            </command>
+            <command
+                  commandId="aimv.utilityviews.command"
+                  icon="icons/utilityviews.png"
+                  id="aimv.utilityviews.toolbar.command"
+                  label="Utility Views"
+                  style="push"
+                  tooltip="Utility Views">
+            </command>
+            <separator
+                  name="aimv.toolbar.separator"
+                  visible="true">
+            </separator>
+            <command
+                  commandId="aimv.dataimport.command"
+                  icon="icons/dataimport.png"
+                  id="aimv.dataimport.toolbar.command"
+                  label="Data Import"
+                  style="push"
+                  tooltip="Data Import">
+            </command>
+         </toolbar>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:org.eclipse.ui.main.menu">
+         <menu
+               id="menu:aimv.menu"
+               label="AIMV"
+               tooltip="AIMV">
+            <command
+                  commandId="aimv.dataviews.command"
+                  icon="icons/dataviews.png"
+                  id="aimv.dataviews.menu.command"
+                  label="Data Views"
+                  style="push"
+                  tooltip="Data Views">
+            </command>
+            <command
+                  commandId="aimv.filterviews.command"
+                  icon="icons/filterviews.png"
+                  id="aimv.filterviews.menu.command"
+                  label="Filter Views"
+                  style="push"
+                  tooltip="Filter Views">
+            </command>
+            <command
+                  commandId="aimv.utilityviews.command"
+                  icon="icons/utilityviews.png"
+                  id="aimv.utilityviews.menu.command"
+                  label="Utility Views"
+                  style="push"
+                  tooltip="Utility Views">
+            </command>
+            <separator
+                  name="aimv.menu.separator"
+                  visible="true">
+            </separator>
+            <command
+                  commandId="aimv.dataimport.command"
+                  icon="icons/dataimport.png"
+                  id="aimv.dataimport.menu.command"
+                  label="Data Import"
+                  style="push"
+                  tooltip="Data Import">
+            </command>
+         </menu>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            categoryId="aimv.category"
+            defaultHandler="aimv.handlers.DataViewsHandler"
+            id="aimv.dataviews.command"
+            name="Data Views">
+      </command>
+      <command
+            categoryId="aimv.category"
+            defaultHandler="aimv.handlers.FilterViewsHandler"
+            id="aimv.filterviews.command"
+            name="Filter Views">
+      </command>
+      <command
+            categoryId="aimv.category"
+            defaultHandler="aimv.handlers.UtilityViewsHandler"
+            id="aimv.utilityviews.command"
+            name="Utility Views">
+      </command>
+      <command
+            categoryId="aimv.category"
+            defaultHandler="aimv.handlers.DataImportHandler"
+            id="aimv.dataimport.command"
+            name="Data Import">
+      </command>
+      <category
+            description="Commands Framework AIMV"
+            id="aimv.category"
+            name="AIMV Category">
+      </category>
+   </extension>
+
+
+</plugin>

@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: CompareView
+Bundle-SymbolicName: comparisonview;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: comparisonview.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.sourceminer.aimv;bundle-version="1.0.0",
+ givemeviews;bundle-version="1.0.0",
+ collaborationprovider;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: jfreechart-1.0.19-swt.jar,
+ jfreechart-1.0.19.jar,
+ .
